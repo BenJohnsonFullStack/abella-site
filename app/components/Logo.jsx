@@ -1,7 +1,7 @@
 import React from "react";
 
-const Logo = (props) => (
-  <svg viewBox="0 0 388 317" overflow="visible" {...props}>
+const Logo = () => (
+  <svg viewBox="0 0 388 317" className="w-96">
     <defs>
       <filter id="a" filterUnits="userSpaceOnUse">
         <feOffset />
@@ -88,7 +88,7 @@ const Logo = (props) => (
     />
     <text
       transform="translate(132.75 252.93)"
-      fill="none"
+      fill="#edece6"
       opacity={0.98}
       filter="url(#f)"
       fontFamily="Anke,Anke"
@@ -106,7 +106,7 @@ const Logo = (props) => (
       filter="url(#g)"
       fontFamily="MADESunflower,'MADE Sunflower'"
       fontSize="41.21px"
-      fill="none"
+      fill="#edece6"
       opacity={0.98}
     >
       <tspan x={0} y={0} letterSpacing=".2em">
