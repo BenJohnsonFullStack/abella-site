@@ -1,4 +1,4 @@
-import Button from "./components/Button";
+import PrimaryButton from "./components/PrimaryButton";
 import Logo from "./components/Logo";
 import { buttonText } from "./constants";
 
@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <div className="bg-abella-hero bg-cover bg-no-repeat bg-center">
         <Logo />
-        <Button>{buttonText.schedule}</Button>
+        <PrimaryButton>{buttonText.schedule}</PrimaryButton>
       </div>
     </main>
   );
