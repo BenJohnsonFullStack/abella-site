@@ -1,23 +1,24 @@
 import React from "react";
 
-const Logo = () => (
-  <svg viewBox="0 0 388 317" className="w-96">
+const Logo = (props) => (
+  <svg id="Layer_1" viewBox="0 0 600 342.18" {...props}>
     <defs>
-      <filter id="a" filterUnits="userSpaceOnUse">
+      <style>{".cls-3{letter-spacing:.2em}"}</style>
+      <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
         <feOffset />
         <feGaussianBlur result="blur" stdDeviation={40} />
         <feFlood floodColor="#49445e" floodOpacity={0.1} />
         <feComposite in2="blur" operator="in" />
         <feComposite in="SourceGraphic" />
       </filter>
-      <filter id="b" filterUnits="userSpaceOnUse">
+      <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
         <feOffset />
         <feGaussianBlur result="blur-2" stdDeviation={40} />
         <feFlood floodColor="#49445e" floodOpacity={0.1} />
         <feComposite in2="blur-2" operator="in" />
         <feComposite in="SourceGraphic" />
       </filter>
-      <filter id="c" filterUnits="userSpaceOnUse">
+      <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
         <feOffset />
         <feGaussianBlur result="blur-3" stdDeviation={40} />
         <feFlood floodColor="#49445e" floodOpacity={0.1} />
@@ -25,97 +26,79 @@ const Logo = () => (
         <feComposite in="SourceGraphic" />
       </filter>
       <linearGradient
-        id="d"
-        x1={217.62}
-        y1={154.48}
-        x2={170.36}
-        y2={154.48}
+        id="linear-gradient"
+        x1={353.15}
+        y1={95.76}
+        x2={246.8}
+        y2={95.76}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset={0} stopColor="#fbee43" />
-        <stop offset={0.04} stopColor="#fbe133" />
-        <stop offset={0.12} stopColor="#fbd221" />
-        <stop offset={0.2} stopColor="#fbc915" />
-        <stop offset={0.28} stopColor="#fcc612" />
-        <stop offset={0.67} stopColor="#f18f40" />
-        <stop offset={0.89} stopColor="#ec683b" />
-        <stop offset={1} stopColor="#e83e39" />
+        <stop offset={0} stopColor="#fff33b" />
+        <stop offset={0.04} stopColor="#fee62d" />
+        <stop offset={0.12} stopColor="#fdd51b" />
+        <stop offset={0.2} stopColor="#fdca0f" />
+        <stop offset={0.28} stopColor="#fdc70c" />
+        <stop offset={0.67} stopColor="#f3903f" />
+        <stop offset={0.89} stopColor="#ed683c" />
+        <stop offset={1} stopColor="#e93e3a" />
       </linearGradient>
-      <filter id="e" filterUnits="userSpaceOnUse">
+      <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
         <feOffset />
         <feGaussianBlur result="blur-4" stdDeviation={40} />
         <feFlood floodColor="#49445e" floodOpacity={0.4} />
         <feComposite in2="blur-4" operator="in" />
         <feComposite in="SourceGraphic" />
       </filter>
-      <filter id="f" filterUnits="userSpaceOnUse">
-        <feOffset />
-        <feGaussianBlur result="blur-5" stdDeviation={20} />
-        <feFlood floodColor="#0f101b" floodOpacity={0.6} />
-        <feComposite in2="blur-5" operator="in" />
-        <feComposite in="SourceGraphic" />
-      </filter>
-      <filter id="g" filterUnits="userSpaceOnUse">
-        <feOffset />
-        <feGaussianBlur result="blur-6" stdDeviation={20} />
-        <feFlood floodColor="#0f101b" floodOpacity={0.6} />
-        <feComposite in2="blur-6" operator="in" />
-        <feComposite in="SourceGraphic" />
-      </filter>
     </defs>
     <path
-      d="M210.32 152.91c3.38 12.61-4.1 25.57-16.71 28.95-12.61 3.38-25.57-4.1-28.95-16.71-3.38-12.61 13.12-42.37 13.12-42.37s29.16 17.52 32.54 30.13z"
-      filter="url(#a)"
-      fill="#e9d4e7"
+      d="M336.72 92.1c7.6 29.36-9.23 59.55-37.6 67.41-28.37 7.87-57.53-9.56-65.13-38.92-7.6-29.36 29.51-98.67 29.51-98.67s65.62 40.81 73.22 70.18z"
+      fill="#ead5ea"
+      filter="url(#drop-shadow-1)"
     />
     <path
-      d="M217.24 158.22c0 13.05-10.58 23.63-23.63 23.63s-23.63-10.58-23.63-23.63 23.63-37.53 23.63-37.53 23.63 24.47 23.63 37.53z"
-      fill="#d2abd0"
-      filter="url(#b)"
+      d="M352.3 104.47c0 30.4-23.81 55.04-53.18 55.04s-53.18-24.64-53.18-55.04 53.18-87.4 53.18-87.4 53.18 57 53.18 87.4z"
+      fill="#d4acd4"
+      filter="url(#drop-shadow-2)"
       opacity={0.6}
     />
     <path
-      d="M222.56 165.15c-3.38 12.61-16.34 20.09-28.95 16.71-12.61-3.38-20.09-16.34-16.71-28.95 3.38-12.61 32.54-30.13 32.54-30.13s16.49 29.76 13.12 42.37z"
-      fill="#e9d4e7"
+      d="M364.25 120.59c-7.6 29.36-36.76 46.79-65.13 38.92-28.37-7.87-45.2-38.05-37.6-67.41 7.6-29.36 73.22-70.18 73.22-70.18s37.11 69.3 29.51 98.67z"
+      filter="url(#drop-shadow-3)"
+      fill="#ead5ea"
       opacity={0.6}
-      filter="url(#c)"
     />
     <path
-      d="M217.62 161.43c0 13.05-10.58 23.63-23.63 23.63s-23.63-10.58-23.63-23.63 23.63-37.53 23.63-37.53 23.63 24.47 23.63 37.53z"
-      fill="url(#d)"
-      filter="url(#e)"
+      d="M353.15 111.94c0 30.4-23.81 55.04-53.18 55.04s-53.18-24.64-53.18-55.04 53.18-87.4 53.18-87.4 53.18 57 53.18 87.4z"
       opacity={0.6}
+      fill="url(#linear-gradient)"
+      filter="url(#drop-shadow-4)"
     />
     <text
-      transform="translate(132.75 252.93)"
+      transform="matrix(.97 0 0 1 200.81 321.12)"
       fill="#edece6"
-      opacity={0.98}
-      filter="url(#f)"
       fontFamily="Anke,Anke"
-      fontSize="16.4px"
+      fontSize="27.49px"
     >
       <tspan x={0} y={0} letterSpacing=".03em">
         {"T"}
       </tspan>
-      <tspan x={11.01} y={0} letterSpacing=".2em">
+      <tspan x={18.45} y={0} letterSpacing=".2em">
         {"otal Health"}
       </tspan>
     </text>
     <text
-      transform="translate(86.07 227.59)"
-      filter="url(#g)"
+      transform="matrix(.97 0 0 1 57.16 272.52)"
       fontFamily="MADESunflower,'MADE Sunflower'"
-      fontSize="41.21px"
+      fontSize="95.99px"
       fill="#edece6"
-      opacity={0.98}
     >
-      <tspan x={0} y={0} letterSpacing=".2em">
+      <tspan className="cls-3" x={0} y={0}>
         {"ABEL"}
       </tspan>
-      <tspan x={148.53} y={0} letterSpacing=".19em">
+      <tspan x={345.93} y={0} letterSpacing=".19em">
         {"L"}
       </tspan>
-      <tspan x={184.06} y={0} letterSpacing=".2em">
+      <tspan className="cls-3" x={428.67} y={0}>
         {"A"}
       </tspan>
     </text>

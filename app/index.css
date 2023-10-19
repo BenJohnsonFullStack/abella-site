@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 *::before,
 *::after {
@@ -18,4 +14,8 @@ svg,
 video {
   max-width: 100%;
   display: block;
+}
+
+#hero {
+  background-image: url("./assets/abella-hero.webp");
 }

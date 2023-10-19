@@ -3,9 +3,11 @@ import { buttonText } from "../constants";
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full h-screen mx-auto">
-      <div className="h-screen mx-auto flex flex-col items-center justify-between">
-        <Logo />
+    <section id="hero">
+      <div className="hero-container">
+        <div className="hero-logo-container">
+          <Logo />
+        </div>
         <PrimaryButton>{buttonText.schedule}</PrimaryButton>
       </div>
     </section>
