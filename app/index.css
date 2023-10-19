@@ -72,3 +72,36 @@ video {
   background-position: center;
   min-height: 100vh;
 }
+
+.btn-container {
+  text-align: center;
+  margin-top: 20em;
+  padding-bottom: 4em;
+}
+
+.btn-primary {
+  --border-width: 2.5px;
+  --border-radius: 5px;
+
+  padding: 0.75rem 4rem;
+  background: var(--clr-accent);
+  color: var(--clr-on-surface);
+  font-size: var(--fs-400);
+  border: 0;
+  position: relative;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+
+.btn-primary::before {
+  content: "";
+  display: block;
+  width: calc(100% - calc(var(--border-width) * 2));
+  height: calc(100% - calc(var(--border-width) * 2));
+  background: var(--clr-surface);
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+}
