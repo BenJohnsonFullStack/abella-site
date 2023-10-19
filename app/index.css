@@ -8,6 +8,23 @@
   --clr-primary-variant: #ae91f2;
   --clr-secondary: #4c86bf;
   --clr-secondary-variant: #8fc4ef;
+  --clr-tertiary: linear-gradient(
+    45deg,
+    #fff3a3,
+    #fdc774,
+    #f3903f,
+    #ed683c,
+    #e93e3a
+  );
+  --clr-accent: linear-gradient(
+    #604442,
+    #ca9a50,
+    #f6e27b,
+    #f6f2c1,
+    #f6e27b,
+    #ca9a50,
+    #604442
+  );
   --clr-bg: #111525;
   --clr-surface: #24166d;
   --clr-danger: #d32020;
