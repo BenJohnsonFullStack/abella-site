@@ -26,7 +26,7 @@
     #ca9a50,
     #604442
   );
-  --clr-bg: #111525;
+  --clr-bg: linear-gradient(60deg, #111525, #00002e);
   --clr-surface: #24166d;
   --clr-danger: #d32020;
   --clr-success: #9fd37d;
@@ -66,7 +66,7 @@ video {
 }
 
 #hero {
-  background-image: linear-gradient(60deg, #111525, #00002e);
+  background-image: var(--clr-bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
