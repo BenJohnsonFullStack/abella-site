@@ -18,4 +18,8 @@ video {
 
 #hero {
   background-image: url("./assets/abella-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 }
