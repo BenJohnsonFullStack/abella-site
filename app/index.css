@@ -1,3 +1,4 @@
+/* GLOBAL VARIABLES */
 :root {
   /* COLOR SCHEME */
   --clr-on-bg: #edece6;
@@ -47,6 +48,7 @@
   --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
 }
 
+/* GLOBAL RESET */
 *,
 *::before,
 *::after {
@@ -58,6 +60,7 @@
   padding: 0;
 }
 
+/* MEDIA RESET */
 img,
 svg,
 video {
@@ -65,6 +68,7 @@ video {
   display: block;
 }
 
+/* HERO BG STYLES */
 #hero {
   background-image: var(--clr-bg);
   background-size: cover;
@@ -73,12 +77,14 @@ video {
   min-height: 100vh;
 }
 
+/* HERO BUTTON POSITION */
 .btn-container {
   text-align: center;
   margin-top: 20em;
   padding-bottom: 4em;
 }
 
+/* BUTTON WITH GOLD GRADIENT, SEE BELOW */
 .btn-primary {
   --border-width: 2.5px;
   --border-radius: 5px;
@@ -93,6 +99,7 @@ video {
   z-index: 1;
 }
 
+/* BUTTON BORDER GRADIENT W/ RADIUS */
 .btn-primary::before {
   content: "";
   display: block;
