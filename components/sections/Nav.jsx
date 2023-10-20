@@ -1,6 +1,7 @@
 "use client";
 
 import { useScreenSize } from "@/hooks";
+import { DesktopNavbar, MobileNavbar } from "../elements";
 
 const Nav = () => {
   const isMobile = useScreenSize();
@@ -11,14 +12,14 @@ const Nav = () => {
         {/* MOBILE NAVIGATION */}
         {isMobile && (
           <>
-            <div>Mobile Nav</div>
+            <MobileNavbar />
           </>
         )}
 
         {/* DESKTOP NAVIGATION */}
         {!isMobile && (
           <>
-            <div>Desktop Nav</div>
+            <DesktopNavbar />
           </>
         )}
       </nav>

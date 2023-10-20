@@ -86,6 +86,7 @@ video {
   min-height: 100vh;
 }
 
+/* HERO LOGO SIZE */
 .hero-logo-container {
   width: min(100% - 2em, 25rem);
   margin: 0 auto;
