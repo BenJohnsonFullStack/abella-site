@@ -1,5 +1,5 @@
-import { Logo, PrimaryButton } from "../elements";
-import { buttonText } from "../../constants";
+import { Logo, PrimaryButton } from "@/components/elements";
+import { buttonText } from "@/constants";
 
 const Hero = () => {
   return (

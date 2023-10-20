@@ -1,10 +1,26 @@
-import React from "react";
+"use client";
+
+import { useScreenSize } from "@/hooks";
 
 const Nav = () => {
+  const isMobile = useScreenSize();
+
   return (
     <section>
       <nav className="nav">
-        <div>Nav</div>
+        {/* MOBILE NAVIGATION */}
+        {isMobile && (
+          <>
+            <div>Mobile Nav</div>
+          </>
+        )}
+
+        {/* DESKTOP NAVIGATION */}
+        {!isMobile && (
+          <>
+            <div>Desktop Nav</div>
+          </>
+        )}
       </nav>
     </section>
   );

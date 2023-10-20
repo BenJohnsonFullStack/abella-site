@@ -28,7 +28,8 @@
     #604442
   );
   --clr-bg-gradient: linear-gradient(60deg, #111525, #00002e);
-  --clr-bg: #111525;
+  --clr-bg-reverse-gradient: linear-gradient(-135deg, #111525, #00002e);
+  --clr-bg: #00002e;
   --clr-surface: #24166d;
   --clr-danger: #d32020;
   --clr-success: #9fd37d;
@@ -67,6 +68,13 @@ svg,
 video {
   max-width: 100%;
   display: block;
+}
+
+/* NAV STYLES */
+.nav {
+  background-color: var(--clr-bg);
+  position: fixed;
+  width: 100%;
 }
 
 /* HERO BG STYLES */

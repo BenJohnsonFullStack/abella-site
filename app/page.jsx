@@ -6,7 +6,7 @@ import {
   Nav,
   OurTeam,
   SignUp,
-} from "../components/sections";
+} from "@/components/sections";
 
 export default function Home() {
   return (
