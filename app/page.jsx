@@ -11,9 +11,8 @@ import {
 export default function Home() {
   return (
     <main>
-      <Hero>
-        <Nav />
-      </Hero>
+      <Nav />
+      <Hero />
       <About />
       <OurTeam />
       <SignUp />
