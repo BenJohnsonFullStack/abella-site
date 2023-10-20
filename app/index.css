@@ -79,7 +79,7 @@ video {
 }
 
 .hero-logo-container {
-  width: 20em;
+  width: min(100% - 2em, 25rem);
   margin: 0 auto;
   padding-top: 4em;
 }
@@ -87,8 +87,8 @@ video {
 /* HERO BUTTON POSITION */
 .btn-container {
   text-align: center;
-  margin-top: 20em;
-  padding-bottom: 4em;
+  margin-top: 18rem;
+  padding-bottom: 4rem;
 }
 
 /* BUTTON WITH GOLD GRADIENT, SEE BELOW */
