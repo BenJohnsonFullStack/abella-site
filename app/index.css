@@ -71,7 +71,7 @@ video {
 
 /* HERO BG STYLES */
 #hero {
-  background: url("../assets/abella-hero.svg"), var(--clr-bg-gradient);
+  background: url("../assets/abella-small-hero.svg"), var(--clr-bg-gradient);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
