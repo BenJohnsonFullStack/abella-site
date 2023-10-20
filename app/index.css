@@ -77,6 +77,20 @@ video {
   width: 100%;
 }
 
+/* MOBILE NAV STYLES */
+.mobile-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+.nav-icon {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+}
+
 /* HERO BG STYLES */
 #hero {
   background: url("../assets/abella-hero.svg"), var(--clr-bg-gradient);
@@ -96,8 +110,7 @@ video {
 /* HERO BUTTON POSITION */
 .btn-container {
   text-align: center;
-  margin-top: 17rem;
-  padding-bottom: 4rem;
+  margin-top: 19rem;
 }
 
 /* BUTTON WITH GOLD GRADIENT, SEE BELOW */
