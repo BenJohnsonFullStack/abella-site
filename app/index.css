@@ -71,11 +71,17 @@ video {
 
 /* HERO BG STYLES */
 #hero {
-  background-image: var(--clr-bg-gradient);
+  background: url("../assets/abella-hero.svg"), var(--clr-bg-gradient);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   min-height: 100vh;
+}
+
+.hero-logo-container {
+  width: 20em;
+  margin: 0 auto;
+  padding-top: 4em;
 }
 
 /* HERO BUTTON POSITION */
