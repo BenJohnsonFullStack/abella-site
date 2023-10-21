@@ -62,6 +62,10 @@
   padding: 0;
 }
 
+body {
+  color: var(--clr-on-bg);
+}
+
 /* MEDIA RESET */
 img,
 svg,
@@ -85,6 +89,7 @@ video {
   padding: 1em 2em;
 }
 
+/* MOBILE NAV ICON STYLES */
 .nav-icon {
   width: 2rem;
   height: auto;
@@ -113,7 +118,7 @@ video {
   margin-top: 16rem;
 }
 
-/* BUTTON WITH GOLD GRADIENT, SEE BELOW */
+/* BUTTON GOLD GRADIENT BORDER */
 .btn-primary {
   --border-width: 2.5px;
   --border-radius: 5px;
@@ -128,7 +133,7 @@ video {
   z-index: 1;
 }
 
-/* BUTTON BORDER GRADIENT W/ RADIUS */
+/* BUTTON SURFACE PSEUDO TO ACCOMODATE GRADIENT BORDER */
 .btn-primary::before {
   content: "";
   display: block;
@@ -140,4 +145,8 @@ video {
   left: var(--border-width);
   border-radius: calc(var(--border-radius) - var(--border-width));
   z-index: -1;
+}
+
+#about {
+  background-color: var(--clr-bg);
 }
