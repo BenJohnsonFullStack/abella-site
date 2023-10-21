@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainTextBlock = ({ children }) => {
+const TeamMemberCard = ({ children }) => {
   return <div className="main-text-container">{children}</div>;
 };
 
-export default MainTextBlock;
+export default TeamMemberCard;
