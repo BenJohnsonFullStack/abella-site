@@ -82,7 +82,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 1em;
 }
 
 .nav-icon {
@@ -104,13 +104,13 @@ video {
 .hero-logo-container {
   width: min(100% - 2em, 25rem);
   margin: 0 auto;
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 /* HERO BUTTON POSITION */
 .btn-container {
   text-align: center;
-  margin-top: 19rem;
+  margin-top: 16rem;
 }
 
 /* BUTTON WITH GOLD GRADIENT, SEE BELOW */
