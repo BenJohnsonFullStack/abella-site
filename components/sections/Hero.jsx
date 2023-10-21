@@ -7,7 +7,9 @@ const Hero = () => {
       <div className="hero-logo-container">
         <Logo />
       </div>
-      <PrimaryButton>{buttonText.schedule}</PrimaryButton>
+      <div className="hero-btn-container">
+        <PrimaryButton>{buttonText.schedule}</PrimaryButton>
+      </div>
     </section>
   );
 };

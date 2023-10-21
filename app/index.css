@@ -27,8 +27,6 @@
     #ca9a50,
     #604442
   );
-  --clr-bg-gradient: linear-gradient(60deg, #111525, #00002e);
-  --clr-bg-reverse-gradient: linear-gradient(-135deg, #111525, #00002e);
   --clr-bg: #00002e;
   --clr-surface: #24166d;
   --clr-danger: #d32020;
@@ -74,11 +72,12 @@ video {
   display: block;
 }
 
-/* NAV STYLES */
+/* GLOBAL NAV STYLES */
 .nav {
   background-color: var(--clr-bg);
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 
 /* MOBILE NAV STYLES */
@@ -98,7 +97,7 @@ video {
 
 /* HERO BG STYLES */
 #hero {
-  background: url("../assets/abella-hero.svg"), var(--clr-bg-gradient);
+  background: url("../assets/abella-hero.svg"), var(--clr-bg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,7 +112,7 @@ video {
 }
 
 /* HERO BUTTON POSITION */
-.btn-container {
+.hero-btn-container {
   text-align: center;
   margin-top: 16rem;
 }
@@ -149,4 +148,5 @@ video {
 
 #about {
   background-color: var(--clr-bg);
+  padding: 4em;
 }
