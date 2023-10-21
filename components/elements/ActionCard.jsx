@@ -2,15 +2,15 @@ import Image from "next/image";
 import React from "react";
 import { TextSection, SecondaryButton } from ".";
 
-const ActionCard = ({ image, title, points }) => {
+const ActionCard = ({ imageUrl, title, points }) => {
   return (
     <div className="action-card">
-      <Image src={image} alt="inspire points image" />
+      <Image src={imageUrl} alt="programs image" />
       <TextSection>
-        <h3>Inspire</h3>
+        <h3>Programs</h3>
         <ul>
           {/** MAP OVER POINTS */}
-          <li>Inspire Point</li>
+          <li>Programs List</li>
           {/** END OF MAP */}
         </ul>
       </TextSection>
