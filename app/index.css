@@ -46,6 +46,8 @@
   --fs-800: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
   --fs-900: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
   --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+  /* SAHDOWS */
+  --shd-card: 0px 0px 10px rgba(5, 2, 20, 0.3);
 }
 
 /* GLOBAL RESET */
@@ -146,7 +148,19 @@ video {
   z-index: -1;
 }
 
+/* ABOUT SECTION STYLES */
 #about {
   background-color: var(--clr-bg);
-  padding: 4em;
+  padding: 4em 0;
+}
+
+/* HIGHLIGHT CARD STYLES */
+.highlight-card {
+  background-color: var(--clr-surface);
+  border-radius: 10px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  box-shadow: var(--shd-card);
 }

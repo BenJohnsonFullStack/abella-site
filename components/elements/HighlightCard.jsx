@@ -3,13 +3,13 @@ import { TextSection } from ".";
 
 const HighlightCard = ({ image, title, description }) => {
   return (
-    <div className="highlight-card">
-      <Image src={image} alt="highlight image" />
+    <>
+      {/* <Image src={image} alt="highlight image" /> */}
       <TextSection>
-        <h3>Header</h3>
-        <p>Highlight</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </TextSection>
-    </div>
+    </>
   );
 };
 
