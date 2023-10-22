@@ -54,15 +54,18 @@ const team = [
     name: "Sherri Johnston",
     role: "President",
     credentials: "MSN, RN, Certified CCP, Health Coach",
-    description: "",
+    description:
+      "I'm a Registered Nurse certified in Chronic Disease Management, Health Coaching, and Yoga. I have dedicated my professional life to serving and empowering others to adopt healthier lifestyle behaviors, manage chronic conditions, and promote self-efficacy.",
   },
   {
     id: 2,
     image: null,
     name: "Maggie Johnson",
-    role: "Health Coach, Reiki Instructor",
-    credentials: "Certified Integrative Health Coach",
-    description: "",
+    role: "Health Coach, Reiki Master",
+    credentials:
+      "Yoga Alliance Certified, IIN Health Coach, Certified Tantric Reiki Master Healer",
+    description:
+      "I'm a certified Integrative Health and Wellness Coach, Yoga, Instructor, and Reiki Practitioner. My passion lies in unlocking the body's natural healing process through sustainable lifestyle changes and mental health awareness.",
   },
   {
     id: 3,
@@ -70,7 +73,8 @@ const team = [
     name: "Kaitlyn Dillard",
     role: "Health Coach",
     credentials: "MSN, RN, Certified Integrative Health Coach",
-    description: "",
+    description:
+      "I am a Registered Nurse, Integrative Health Coach, and Yoga Instructor with primary experience in maternal and postpartum health and chronic disease management. I have seen firsthand how improving your health can improve all other areas of your life, and I can't wait to meet you and join you on your journey of hope health, and happiness.",
   },
   {
     id: 4,
