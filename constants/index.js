@@ -76,14 +76,14 @@ const team = [
     description:
       "I am a Registered Nurse, Integrative Health Coach, and Yoga Instructor with primary experience in maternal and postpartum health and chronic disease management. I have seen firsthand how improving your health can improve all other areas of your life, and I can't wait to meet you and join you on your journey of hope health, and happiness.",
   },
-  {
-    id: 4,
-    image: null,
-    name: "Melissa Golden",
-    role: "Reiki Instructor",
-    credentials: null,
-    description: "",
-  },
+  // {
+  //   id: 4,
+  //   image: null,
+  //   name: "Melissa Golden",
+  //   role: "Reiki Instructor",
+  //   credentials: null,
+  //   description: "",
+  // },
 ];
 
 export { buttonText, highlights, programs, team };

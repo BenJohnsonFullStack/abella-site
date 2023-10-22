@@ -5,7 +5,7 @@ import { TextSection, SecondaryButton } from ".";
 const ActionCard = ({ imageUrl, title, points }) => {
   return (
     <div className="action-card">
-      <Image src={imageUrl} alt="programs image" />
+      {/* <Image src={imageUrl} alt="programs image" /> */}
       <TextSection>
         <h3>Programs</h3>
         <ul>

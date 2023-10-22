@@ -46,7 +46,7 @@
   --fs-800: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
   --fs-900: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
   --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
-  /* SAHDOWS */
+  /* SHADOWS */
   --shd-card: 0px 0px 10px rgba(5, 2, 20, 0.3);
 }
 

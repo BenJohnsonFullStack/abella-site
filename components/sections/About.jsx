@@ -1,4 +1,4 @@
-import { highlights } from "@/constants";
+import { highlights, team } from "@/constants";
 import { ActionCard, HighlightCard, TeamMemberCard } from "../elements";
 
 const About = () => {
@@ -13,13 +13,15 @@ const About = () => {
             </div>
           ))}
 
-          <ActionCard />
+          {/* <ActionCard /> */}
         </div>
 
         <div className="team-member-container">
-          {/** MAP OVER TEAM MEMBERS */}
-          <TeamMemberCard />
-          {/** END OF MAP */}
+          {team.map((member) => (
+            <div key={member.id} className="highlight-card">
+              <TeamMemberCard {...member} />
+            </div>
+          ))}
         </div>
       </section>
     </>
