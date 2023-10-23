@@ -23,9 +23,9 @@ const RegistrationForm = () => {
   };
 
   return (
-    <form className="registration-form">
-      <label htmlFor="firstName">
-        First Name
+    <div className="form-container card">
+      <form className="registration-form">
+        <label htmlFor="firstName">First Name</label>
         <input
           type="text"
           name="firstName"
@@ -34,9 +34,7 @@ const RegistrationForm = () => {
           placeholder="Enter your first name"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="lastName">
-        Last Name
+        <label htmlFor="lastName">Last Name</label>
         <input
           type="text"
           name="lastName"
@@ -45,9 +43,7 @@ const RegistrationForm = () => {
           placeholder="Enter your last name"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="email">
-        Email
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           name="email"
@@ -56,9 +52,7 @@ const RegistrationForm = () => {
           placeholder="Enter your email"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="phone">
-        Phone Number
+        <label htmlFor="phone">Phone Number</label>
         <input
           type="text"
           name="phone"
@@ -67,9 +61,7 @@ const RegistrationForm = () => {
           placeholder="Enter your phone number"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="streetAddress">
-        Street Address
+        <label htmlFor="streetAddress">Street Address</label>
         <input
           type="text"
           name="streetAddress"
@@ -78,9 +70,7 @@ const RegistrationForm = () => {
           placeholder="Enter your street address"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="city">
-        City
+        <label htmlFor="city">City</label>
         <input
           type="text"
           name="city"
@@ -89,9 +79,7 @@ const RegistrationForm = () => {
           placeholder="Enter your city"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="state">
-        State
+        <label htmlFor="state">State</label>
         <input
           type="text"
           name="state"
@@ -99,9 +87,7 @@ const RegistrationForm = () => {
           value={formValues.state}
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="zipCode">
-        Zip Code
+        <label htmlFor="zipCode">Zip Code</label>
         <input
           type="text"
           name="zipCode"
@@ -110,9 +96,7 @@ const RegistrationForm = () => {
           placeholder="Enter your zip code"
           onChange={handleChange}
         />
-      </label>
-      <label htmlFor="dateOfBirth">
-        Date of Birth
+        <label htmlFor="dateOfBirth">Date of Birth</label>
         <input
           type="text"
           name="dateOfBirth"
@@ -120,8 +104,8 @@ const RegistrationForm = () => {
           value={formValues.dateOfBirth}
           onChange={handleChange}
         />
-      </label>
-    </form>
+      </form>
+    </div>
   );
 };
 

@@ -198,6 +198,7 @@ video {
   padding-bottom: 2em;
 }
 
+/* SECONDARY BUTTON STYLES */
 .btn-secondary {
   padding: 0.75em 4em;
   border: none;
@@ -213,4 +214,19 @@ video {
   width: 10em;
   height: auto;
   margin: 0 auto;
+}
+
+.registration-form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-top: 1em;
+  padding-bottom: 0.25em;
+}
+
+.registration-form input {
+  padding: 0.5em 0.25em;
 }
