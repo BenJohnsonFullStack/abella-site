@@ -4,7 +4,11 @@ import { TextSection } from ".";
 const TeamMemberCard = ({ image, name, role, credentials, description }) => {
   return (
     <>
-      {/* <Image src={image} alt="team member image" /> */}
+      <Image
+        src={image}
+        alt="team member image"
+        className="team-member-image"
+      />
       <TextSection>
         <h3>{name}</h3>
         <h4>{role}</h4>

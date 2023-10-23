@@ -170,3 +170,11 @@ video {
   margin: 2em;
   box-shadow: var(--shd-card);
 }
+
+/* STAFF HEADSHOT STYLES */
+.team-member-image {
+  border-radius: 9999px;
+  width: 10em;
+  height: auto;
+  margin: 0 auto;
+}

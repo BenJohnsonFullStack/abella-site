@@ -1,3 +1,5 @@
+import { sherri, maggie, kaitlyn } from "@/assets";
+
 const buttonText = {
   schedule: "Schedule Today",
 };
@@ -50,7 +52,7 @@ const programs = [
 const team = [
   {
     id: 1,
-    image: null,
+    image: sherri,
     name: "Sherri Johnston",
     role: "President",
     credentials: "MSN, RN, Certified CCP, Health Coach",
@@ -59,7 +61,7 @@ const team = [
   },
   {
     id: 2,
-    image: null,
+    image: maggie,
     name: "Maggie Johnson",
     role: "Health Coach, Reiki Master",
     credentials:
@@ -69,7 +71,7 @@ const team = [
   },
   {
     id: 3,
-    image: null,
+    image: kaitlyn,
     name: "Kaitlyn Dillard",
     role: "Health Coach",
     credentials: "MSN, RN, Certified Integrative Health Coach",
