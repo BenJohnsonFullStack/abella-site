@@ -1,9 +1,11 @@
-import React from "react";
+import { RegistrationForm } from "@/components/elements";
 
 const SignUp = () => {
   return (
     <>
-      <section id="sign-up">SignUp</section>
+      <section id="sign-up">
+        <RegistrationForm />
+      </section>
     </>
   );
 };

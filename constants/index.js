@@ -2,6 +2,7 @@ import { sherri, maggie, kaitlyn } from "@/assets";
 
 const buttonText = {
   schedule: "Schedule Today",
+  action: "Learn More",
 };
 
 const highlights = [
