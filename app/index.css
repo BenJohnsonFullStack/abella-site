@@ -221,6 +221,7 @@ video {
   padding: 2em;
   display: flex;
   flex-direction: column;
+  padding-bottom: 0;
 }
 
 /* LABEL PADDING */

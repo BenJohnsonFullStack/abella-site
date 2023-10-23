@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { SecondaryButton } from ".";
+import { buttonText } from "@/constants";
 
 const initialFormValues = {
   firstName: "",
@@ -22,9 +24,17 @@ const RegistrationForm = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // add axios utility function
+
+    setFormValues(initialFormValues);
+  };
+
   return (
     <div className="form-container card">
-      <form className="registration-form">
+      <form className="registration-form" onSubmit={handleSubmit}>
         <label htmlFor="firstName">First Name</label>
         <input
           type="text"
@@ -104,6 +114,7 @@ const RegistrationForm = () => {
           value={formValues.dateOfBirth}
           onChange={handleChange}
         />
+        <SecondaryButton>{buttonText.submit}</SecondaryButton>
       </form>
     </div>
   );
