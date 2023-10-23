@@ -1,6 +1,6 @@
 const SecondaryButton = ({ children }) => {
   return (
-    <div className="btn-container">
+    <div className="action-btn-container">
       <button className="btn-secondary">{children}</button>
     </div>
   );

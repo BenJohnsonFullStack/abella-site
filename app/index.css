@@ -127,7 +127,16 @@ video {
 /* HERO BUTTON POSITION */
 .hero-btn-container {
   text-align: center;
-  margin-top: 16rem;
+  margin-top: 12rem;
+}
+
+/* HERO HEADING */
+.hero-btn-container h1 {
+  padding-bottom: 2em;
+  width: min(100% - 2em, 20ch);
+  text-align: center;
+  margin: 0 auto;
+  font-size: var(--fs-600);
 }
 
 /* BUTTON GOLD GRADIENT BORDER */
@@ -143,6 +152,7 @@ video {
   position: relative;
   border-radius: var(--border-radius);
   z-index: 1;
+  cursor: pointer;
 }
 
 /* BUTTON SURFACE PSEUDO TO ACCOMODATE GRADIENT BORDER */
@@ -157,6 +167,7 @@ video {
   left: var(--border-width);
   border-radius: calc(var(--border-radius) - var(--border-width));
   z-index: -1;
+  cursor: pointer;
 }
 
 /* ABOUT SECTION STYLES */
@@ -178,6 +189,21 @@ video {
 .highlight-image {
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+
+.action-btn-container {
+  text-align: center;
+  margin: 2em 0;
+  padding-bottom: 2em;
+}
+
+.btn-secondary {
+  padding: 0.75em 4em;
+  border: none;
+  border-radius: 5px;
+  background: var(--clr-secondary-variant);
+  box-shadow: var(--shd-card);
+  cursor: pointer;
 }
 
 /* STAFF HEADSHOT STYLES */

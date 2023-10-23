@@ -8,6 +8,7 @@ const Hero = () => {
         <Logo />
       </div>
       <div className="hero-btn-container">
+        <h1>Health Coaching • Yoga • Energy Healing</h1>
         <PrimaryButton>{buttonText.schedule}</PrimaryButton>
       </div>
     </section>
