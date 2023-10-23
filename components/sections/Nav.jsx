@@ -7,12 +7,11 @@ const Nav = () => {
   const [isSmall] = useScreenSize();
 
   return (
-    <section>
-      <nav className="nav">
-        {/* DYNAMIC NAVBAR */}
-        {isSmall ? <MobileNavbar /> : <DesktopNavbar />}
-      </nav>
-    </section>
+    <nav className="nav">
+      {/* DYNAMIC NAVBAR */}
+      {isSmall ? <MobileNavbar /> : <DesktopNavbar />}
+      <div className="nav-border"></div>
+    </nav>
   );
 };
 

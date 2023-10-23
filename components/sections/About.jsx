@@ -1,5 +1,5 @@
-import { highlights, team } from "@/constants";
-import { ActionCard, HighlightCard, TeamMemberCard } from "../elements";
+import { highlights } from "@/constants";
+import { ActionCard, HighlightCard } from "../elements";
 
 const About = () => {
   return (
@@ -13,15 +13,7 @@ const About = () => {
             </div>
           ))}
 
-          {/* <ActionCard /> */}
-        </div>
-
-        <div className="team-member-container">
-          {team.map((member) => (
-            <div key={member.id} className="highlight-card">
-              <TeamMemberCard {...member} />
-            </div>
-          ))}
+          <ActionCard />
         </div>
       </section>
     </>

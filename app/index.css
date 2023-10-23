@@ -64,6 +64,7 @@
 
 body {
   color: var(--clr-on-bg);
+  background-color: var(--clr-bg);
 }
 
 /* MEDIA RESET */
@@ -80,6 +81,12 @@ video {
   position: fixed;
   width: 100%;
   z-index: 99;
+}
+
+/* GRADIENT NAV BORDER */
+.nav-border {
+  height: 2px;
+  background: var(--clr-accent);
 }
 
 /* MOBILE NAV STYLES */
@@ -99,7 +106,7 @@ video {
 
 /* HERO BG STYLES */
 #hero {
-  background: url("../assets/abella-hero.svg"), var(--clr-bg);
+  background-image: url("../assets/abella-hero.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,7 +157,6 @@ video {
 
 /* ABOUT SECTION STYLES */
 #about {
-  background-color: var(--clr-bg);
   padding: 4em 0;
 }
 
