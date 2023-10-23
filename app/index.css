@@ -75,6 +75,10 @@ video {
   display: block;
 }
 
+.text-container {
+  padding: 2em;
+}
+
 /* GLOBAL NAV STYLES */
 .nav {
   background-color: var(--clr-bg);
@@ -173,9 +177,7 @@ video {
 /* HIGHLIGHT IMAGE STYLES */
 .highlight-image {
   width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* STAFF HEADSHOT STYLES */
