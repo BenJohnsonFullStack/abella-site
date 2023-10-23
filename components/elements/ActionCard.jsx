@@ -9,17 +9,19 @@ const ActionCard = () => {
     <div className="card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={imageUrl} alt="programs image" className="highlight-image" />
-      <TextSection>
-        <h3>Programs</h3>
-        <ul>
-          {programs.map((prog) => (
-            <li key={prog.id} className="program-list-item">
-              {prog.title}
-              <span className="italic">{prog.description}</span>
-            </li>
-          ))}
-        </ul>
-      </TextSection>
+      <div className="card-content">
+        <TextSection>
+          <h3>Programs</h3>
+          <ul>
+            {programs.map((prog) => (
+              <li key={prog.id} className="program-list-item">
+                {prog.title}
+                <span className="italic">{prog.description}</span>
+              </li>
+            ))}
+          </ul>
+        </TextSection>
+      </div>
       <SecondaryButton>{buttonText.action}</SecondaryButton>
     </div>
   );

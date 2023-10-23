@@ -10,10 +10,12 @@ const HighlightCard = ({ image, title, description }) => {
         alt="background image for highlight card"
         className="highlight-image"
       />
-      <TextSection>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </TextSection>
+      <div className="card-content">
+        <TextSection>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </TextSection>
+      </div>
       <SecondaryButton>{buttonText.action}</SecondaryButton>
     </>
   );

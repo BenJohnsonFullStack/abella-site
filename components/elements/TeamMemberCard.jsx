@@ -3,7 +3,7 @@ import { TextSection } from ".";
 
 const TeamMemberCard = ({ image, name, role, credentials, description }) => {
   return (
-    <>
+    <div className="card-content">
       <Image
         src={image}
         alt="team member image"
@@ -17,7 +17,7 @@ const TeamMemberCard = ({ image, name, role, credentials, description }) => {
         </h4>
         <p>{description}</p>
       </TextSection>
-    </>
+    </div>
   );
 };
 

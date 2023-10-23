@@ -76,10 +76,6 @@ video {
   display: block;
 }
 
-.text-container {
-  padding: 2em;
-}
-
 /* GLOBAL NAV STYLES */
 .nav {
   background-color: var(--clr-bg);
@@ -184,6 +180,10 @@ video {
   flex-direction: column;
   margin: 2em;
   box-shadow: var(--shd-card);
+}
+
+.card-content {
+  padding: 2em;
 }
 
 /* HIGHLIGHT IMAGE STYLES */
