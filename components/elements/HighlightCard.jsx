@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { TextSection } from ".";
+import { buttonText } from "@/constants";
+import { TextSection, SecondaryButton } from ".";
 
 const HighlightCard = ({ image, title, description }) => {
   return (
@@ -14,6 +14,7 @@ const HighlightCard = ({ image, title, description }) => {
         <h3>{title}</h3>
         <p>{description}</p>
       </TextSection>
+      <SecondaryButton>{buttonText.action}</SecondaryButton>
     </>
   );
 };

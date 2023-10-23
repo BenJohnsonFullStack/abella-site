@@ -216,17 +216,20 @@ video {
   margin: 0 auto;
 }
 
+/* FORM STYLES */
 .registration-form {
   padding: 2em;
   display: flex;
   flex-direction: column;
 }
 
+/* LABEL PADDING */
 .registration-form label {
   margin-top: 1em;
   padding-bottom: 0.25em;
 }
 
+/* INPUT PADDING */
 .registration-form input {
   padding: 0.5em 0.25em;
 }
