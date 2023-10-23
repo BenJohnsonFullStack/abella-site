@@ -48,6 +48,7 @@
   --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
   /* SHADOWS */
   --shd-card: 0px 0px 10px rgba(5, 2, 20, 0.3);
+  --shd-btn: 5px 5px 5px rgba(5, 2, 20, 0.4);
 }
 
 /* GLOBAL RESET */
@@ -202,7 +203,7 @@ video {
   border: none;
   border-radius: 5px;
   background: var(--clr-secondary-variant);
-  box-shadow: var(--shd-card);
+  box-shadow: var(--shd-btn);
   cursor: pointer;
 }
 
