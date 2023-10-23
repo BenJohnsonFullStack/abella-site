@@ -1,17 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import { TextSection, SecondaryButton } from ".";
+import { programs } from "@/constants";
 
-const ActionCard = ({ imageUrl, title, points }) => {
+const ActionCard = ({ imageUrl }) => {
   return (
-    <div className="action-card">
+    <div className="card">
       {/* <Image src={imageUrl} alt="programs image" /> */}
       <TextSection>
         <h3>Programs</h3>
         <ul>
-          {/** MAP OVER POINTS */}
-          <li>Programs List</li>
-          {/** END OF MAP */}
+          {programs.map((prog) => (
+            <li key={prog.id} className="program-list-item">
+              {prog.title}
+              <span className="italic">{prog.description}</span>
+            </li>
+          ))}
         </ul>
       </TextSection>
       <SecondaryButton>Learn More</SecondaryButton>

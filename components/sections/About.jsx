@@ -8,7 +8,7 @@ const About = () => {
         <h2>What We Do</h2>
         <div className="highlights-container">
           {highlights.map((highlight) => (
-            <div key={highlight.id} className="highlight-card">
+            <div key={highlight.id} className="card">
               <HighlightCard {...highlight} />
             </div>
           ))}

@@ -161,14 +161,21 @@ video {
 }
 
 /* HIGHLIGHT CARD STYLES */
-.highlight-card {
+.card {
   background-color: var(--clr-surface);
   border-radius: 10px;
-  padding: 2em;
   display: flex;
   flex-direction: column;
   margin: 2em;
   box-shadow: var(--shd-card);
+}
+
+/* HIGHLIGHT IMAGE STYLES */
+.highlight-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* STAFF HEADSHOT STYLES */
