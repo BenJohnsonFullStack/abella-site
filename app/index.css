@@ -315,6 +315,7 @@ h5 {
 }
 
 /* INPUT PADDING */
-.registration-form input {
+.registration-form input,
+.registration-form select {
   padding: 0.5em 0.25em;
 }
