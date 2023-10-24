@@ -1,3 +1,11 @@
+/* FONT IMPORTS */
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap");
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+}
+
 /* GLOBAL VARIABLES */
 :root {
   /* COLOR SCHEME */
@@ -84,10 +92,18 @@ h2 {
 h3,
 h4 {
   padding: 0.25em 0;
+  font-family: "Geologica Thin", sans-serif;
+}
+
+p,
+span,
+li {
+  font-family: "Geologica Thin", sans-serif;
 }
 
 h5 {
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
+  font-family: "Geologica Thin", sans-serif;
 }
 
 .italic {
