@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
   return (
     <>
@@ -16,6 +19,14 @@ const Footer = () => {
 
           <div className="socials">
             <h3>Follow Us</h3>
+            <div className="social-links">
+              <a href="">
+                <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+              </a>
+              <a href="" className="social-icon">
+                <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

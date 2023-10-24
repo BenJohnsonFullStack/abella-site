@@ -344,3 +344,14 @@ h5 {
 .socials {
   margin-top: 2em;
 }
+
+.social-links {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 2rem;
+}
