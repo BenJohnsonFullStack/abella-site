@@ -1,9 +1,15 @@
 /* FONT IMPORTS */
-/* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap");
 @font-face {
-  font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+  font-family: "MADE Sunflower";
+  src: url("../assets/fonts/MADE\ Sunflower\ PERSONAL\ USE.otf");
+}
+@font-face {
+  font-family: "Geologica";
+  src: url("../assets//fonts/GeologicaCRSVSHRPslntwght-BF648bc329c46b0.ttf");
+}
+@font-face {
+  font-family: "Anke";
+  src: url("../assets/fonts/Anke.ttf");
 }
 
 /* GLOBAL VARIABLES */
@@ -91,18 +97,22 @@ h2 {
   background: var(--clr-accent);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Anke", serif;
 }
 
 h3,
 h4 {
   padding: 0.25em 0;
-  font-family: "Geologica Thin", sans-serif;
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
 }
 
 p,
 span,
-li {
-  font-family: "Geologica Thin", sans-serif;
+li,
+label {
+  font-family: "Geologica", sans-serif;
+  font-weight: 200;
 }
 
 li {
@@ -133,7 +143,7 @@ h3 {
 
 h5 {
   font-size: var(--fs-300);
-  font-family: "Geologica Thin", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 
 .italic {
