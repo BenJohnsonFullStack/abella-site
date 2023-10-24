@@ -10,6 +10,7 @@ const Hero = () => {
       <div className="hero-btn-container">
         <PrimaryButton>{buttonText.schedule}</PrimaryButton>
       </div>
+      <div className="nav-border border-gap"></div>
     </section>
   );
 };

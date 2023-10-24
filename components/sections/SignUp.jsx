@@ -4,6 +4,7 @@ const SignUp = () => {
   return (
     <>
       <section id="sign-up">
+        <h2>Register</h2>
         <RegistrationForm />
       </section>
     </>
