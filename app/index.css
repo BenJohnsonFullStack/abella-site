@@ -124,16 +124,7 @@ video {
 /* HERO BUTTON POSITION */
 .hero-btn-container {
   text-align: center;
-  margin-top: 12rem;
-}
-
-/* HERO HEADING */
-.hero-btn-container h1 {
-  padding-bottom: 2em;
-  width: min(100% - 2em, 20ch);
-  text-align: center;
-  margin: 0 auto;
-  font-size: var(--fs-600);
+  margin-top: 16rem;
 }
 
 /* BUTTON GOLD GRADIENT BORDER */
@@ -182,6 +173,7 @@ video {
   box-shadow: var(--shd-card);
 }
 
+/* CARD CONTENT PADDING */
 .card-content {
   padding: 2em;
 }
@@ -192,6 +184,7 @@ video {
   border-radius: 10px 10px 0 0;
 }
 
+/* ACTION CARD BUTTON STYLES */
 .action-btn-container {
   text-align: center;
   margin: 2em 0;

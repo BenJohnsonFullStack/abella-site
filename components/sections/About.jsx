@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <section id="about">
-        <h2>What We Do</h2>
+        <h1>Health Coaching • Yoga • Energy Healing</h1>
         <div className="highlights-container">
           {highlights.map((highlight) => (
             <div key={highlight.id} className="card">
