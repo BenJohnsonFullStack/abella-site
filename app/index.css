@@ -76,6 +76,24 @@ video {
   display: block;
 }
 
+h1,
+h2 {
+  padding-bottom: 1em;
+}
+
+h3,
+h4 {
+  padding: 0.25em 0;
+}
+
+h5 {
+  font-size: var(--fs-400);
+}
+
+.italic {
+  font-style: italic;
+}
+
 /* GLOBAL NAV STYLES */
 .nav {
   background-color: var(--clr-bg);
@@ -207,6 +225,10 @@ video {
   width: 10em;
   height: auto;
   margin: 0 auto;
+}
+
+.team-member-title {
+  padding: 2em 0;
 }
 
 /* FORM STYLES */

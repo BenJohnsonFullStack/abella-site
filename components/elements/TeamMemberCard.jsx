@@ -10,11 +10,13 @@ const TeamMemberCard = ({ image, name, role, credentials, description }) => {
         className="team-member-image"
       />
       <TextSection>
-        <h3>{name}</h3>
-        <h4>{role}</h4>
-        <h4>
-          <span className="italic">{credentials}</span>
-        </h4>
+        <div className="team-member-title">
+          <h3>{name}</h3>
+          <h4>{role}</h4>
+          <h5>
+            <span className="italic">{credentials}</span>
+          </h5>
+        </div>
         <p>{description}</p>
       </TextSection>
     </div>
