@@ -88,6 +88,9 @@ h1,
 h2 {
   padding-bottom: 1em;
   text-align: center;
+  background: var(--clr-accent);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3,
