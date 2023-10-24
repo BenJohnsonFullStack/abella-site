@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <>
       <section id="footer">
+        <div className="nav-border"></div>
         <div className="footer-container">
           <div className="contact">
             <h3>Questions? Comments?</h3>

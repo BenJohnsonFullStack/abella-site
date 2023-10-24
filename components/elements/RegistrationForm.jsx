@@ -92,7 +92,7 @@ const RegistrationForm = () => {
         <label htmlFor="state">State</label>
 
         {/* STATE DROPDOWN SELECTOR */}
-        <select className="dropdown">
+        <select className="dropdown" name="state" onChange={handleChange}>
           <option value="Select Your State" placeholder="Select Your State">
             Select Your State
           </option>
@@ -159,7 +159,12 @@ const RegistrationForm = () => {
           onChange={handleChange}
         />
         <label htmlFor="dateOfBirth">Date of Birth</label>
-        <input type="date" name="dateOfBirth" id="dateOfBirth" />
+        <input
+          type="date"
+          name="dateOfBirth"
+          id="dateOfBirth"
+          onChange={handleChange}
+        />
         <SecondaryButton>{buttonText.submit}</SecondaryButton>
       </form>
     </div>
