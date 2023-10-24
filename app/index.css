@@ -110,9 +110,15 @@ h4 {
 p,
 span,
 li,
-label {
+label,
+a {
   font-family: "Geologica", sans-serif;
   font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-on-surface);
 }
 
 li {
@@ -318,4 +324,17 @@ h5 {
 .registration-form input,
 .registration-form select {
   padding: 0.5em 0.25em;
+}
+
+.footer-container {
+  background-color: var(--clr-surface);
+  padding: 2em;
+}
+
+.footer-container h3 {
+  font-size: var(--fs-600);
+}
+
+.address {
+  font-style: normal;
 }
