@@ -5,7 +5,9 @@ const SignUp = () => {
     <>
       <section id="sign-up">
         <h2>Register</h2>
-        <RegistrationForm />
+        <div className="card-container">
+          <RegistrationForm />
+        </div>
       </section>
     </>
   );

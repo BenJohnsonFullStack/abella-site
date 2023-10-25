@@ -1,4 +1,4 @@
-import React from "react";
+import "../../app/index.css";
 
 const Logo = (props) => (
   <svg id="Layer_1" viewBox="0 0 600 342.18" {...props}>
@@ -76,7 +76,7 @@ const Logo = (props) => (
     <text
       transform="matrix(.97 0 0 1 200.81 321.12)"
       fill="#edece6"
-      fontFamily="Anke,Anke"
+      fontFamily="'Anke', serif"
       fontSize="27.49px"
     >
       <tspan x={0} y={0} letterSpacing=".03em">

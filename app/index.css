@@ -256,13 +256,13 @@ h5 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-top: 2em; */
 }
 
 .card {
   background-color: var(--clr-surface);
   border-radius: 10px;
   margin: 2em;
+  width: min(100%, 20em);
   overflow: hidden;
   box-shadow: var(--shd-card);
 }
