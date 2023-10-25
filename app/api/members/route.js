@@ -1,6 +1,10 @@
-export const GET = (req, res) => {
+import { Subscriber } from "@/models";
+
+export const POST = async (req, res) => {
   try {
-    res.status(200).json({
+    const newSubscriber = req.body();
+    await Subscriber.addSubscriber(newSubscriber);
+    res.status(201).json({
       message:
         "Thanks for your submission! Someone from our team will reach out to you as soon as possible.",
     });

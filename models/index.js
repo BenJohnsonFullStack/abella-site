@@ -1,3 +1,3 @@
-import { getSubscribers, addSubscriber } from "./subscriber";
+import Subscriber from "@/models/subscriber";
 
-export { getSubscribers, addSubscriber };
+export { Subscriber };
