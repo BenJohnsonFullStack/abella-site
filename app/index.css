@@ -256,7 +256,7 @@ h5 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2em;
+  /* margin-top: 2em; */
 }
 
 .card {
@@ -267,11 +267,6 @@ h5 {
   box-shadow: var(--shd-card);
 }
 
-.highlight-image {
-  width: 100%;
-  height: auto;
-}
-
 /* CARD CONTENT PADDING */
 .card-content {
   padding: 2em;
@@ -280,6 +275,7 @@ h5 {
 /* HIGHLIGHT IMAGE STYLES */
 .highlight-image {
   width: 100%;
+  height: auto;
   border-radius: 10px 10px 0 0;
 }
 
@@ -311,10 +307,15 @@ h5 {
   width: 10em;
   height: auto;
   margin: 0 auto;
+  margin-top: 2em;
 }
 
 .team-member-title {
-  padding: 2em 0;
+  padding-bottom: 2em;
+}
+
+.team-member-title h3 {
+  padding: 0;
 }
 
 #sign-up {
