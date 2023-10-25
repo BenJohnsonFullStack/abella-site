@@ -1,11 +1,12 @@
+import Image from "next/image";
 import { buttonText } from "@/constants";
 import { TextSection, SecondaryButton } from ".";
 
 const HighlightCard = ({ image, title, description }) => {
   return (
-    <>
+    <div className="card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={image}
         alt="background image for highlight card"
         className="highlight-image"
@@ -17,7 +18,7 @@ const HighlightCard = ({ image, title, description }) => {
         </TextSection>
       </div>
       <SecondaryButton>{buttonText.action}</SecondaryButton>
-    </>
+    </div>
   );
 };
 

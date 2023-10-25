@@ -252,13 +252,24 @@ h5 {
 }
 
 /* HIGHLIGHT CARD STYLES */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
 .card {
   background-color: var(--clr-surface);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   margin: 2em;
+  overflow: hidden;
   box-shadow: var(--shd-card);
+}
+
+.highlight-image {
+  width: 100%;
+  height: auto;
 }
 
 /* CARD CONTENT PADDING */
@@ -356,9 +367,9 @@ h5 {
   width: 2rem;
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   .site-wrapper {
     width: min(100% - 2em, 50%);
     margin: 0 auto;
   }
-}
+} */

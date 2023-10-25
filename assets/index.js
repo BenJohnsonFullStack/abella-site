@@ -3,5 +3,17 @@ import menuIcon from "./menu-icon.svg";
 import sherri from "./team/sherri.webp";
 import maggie from "./team/maggie.webp";
 import kaitlyn from "./team/kaitlyn.webp";
+import watermelon from "./watermelon.webp";
+import hands from "./hands.webp";
+import sunset from "./sunset.webp";
 
-export { navIcon, menuIcon, sherri, maggie, kaitlyn };
+export {
+  navIcon,
+  menuIcon,
+  sherri,
+  maggie,
+  kaitlyn,
+  watermelon,
+  hands,
+  sunset,
+};

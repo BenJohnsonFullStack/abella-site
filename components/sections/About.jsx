@@ -8,7 +8,7 @@ const About = () => {
         <h1>Health Coaching • Yoga • Energy Healing</h1>
         <div className="highlights-container">
           {highlights.map((highlight) => (
-            <div key={highlight.id} className="card">
+            <div key={highlight.id} className="card-container">
               <HighlightCard {...highlight} />
             </div>
           ))}

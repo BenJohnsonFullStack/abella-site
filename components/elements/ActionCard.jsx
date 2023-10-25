@@ -1,14 +1,13 @@
+import Image from "next/image";
 import { TextSection, SecondaryButton } from ".";
 import { buttonText, programs } from "@/constants";
-
-const imageUrl =
-  "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvdXAlMjBoYW5kc3xlbnwwfHwwfHx8MA%3D%3D";
+import { hands } from "@/assets";
 
 const ActionCard = () => {
   return (
     <div className="card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={imageUrl} alt="programs image" className="highlight-image" />
+      <Image src={hands} alt="programs image" className="highlight-image" />
       <div className="card-content">
         <TextSection>
           <h3>Programs</h3>
