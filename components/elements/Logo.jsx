@@ -88,7 +88,7 @@ const Logo = (props) => (
     </text>
     <text
       transform="matrix(.97 0 0 1 57.16 272.52)"
-      fontFamily="MADESunflower,'MADE Sunflower'"
+      fontFamily="'MADE Sunflower', sans-serif"
       fontSize="95.99px"
       fill="#edece6"
     >
