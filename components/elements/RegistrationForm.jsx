@@ -5,15 +5,15 @@ import { SecondaryButton } from ".";
 import { buttonText } from "@/constants";
 
 const initialFormValues = {
-  firstName: "",
-  lastName: "",
+  first_name: "",
+  last_name: "",
   email: "",
   phone: "",
-  streetAddress: "",
+  street_address: "",
   city: "",
   state: "",
-  zipCode: "",
-  dateOfBirth: "",
+  zip_code: "",
+  date_of_birth: "",
 };
 
 const RegistrationForm = () => {
@@ -35,21 +35,21 @@ const RegistrationForm = () => {
   return (
     <div className="form-container card">
       <form className="registration-form" onSubmit={handleSubmit}>
-        <label htmlFor="firstName">First Name</label>
+        <label htmlFor="first_name">First Name</label>
         <input
           type="text"
-          name="firstName"
-          id="firstName"
-          value={formValues.firstName}
+          name="first_name"
+          id="first_name"
+          value={formValues.first_name}
           placeholder="Enter your first name"
           onChange={handleChange}
         />
-        <label htmlFor="lastName">Last Name</label>
+        <label htmlFor="last_name">Last Name</label>
         <input
           type="text"
-          name="lastName"
-          id="lastName"
-          value={formValues.lastName}
+          name="last_name"
+          id="last_name"
+          value={formValues.last_name}
           placeholder="Enter your last name"
           onChange={handleChange}
         />
@@ -71,12 +71,12 @@ const RegistrationForm = () => {
           placeholder="Enter your phone number"
           onChange={handleChange}
         />
-        <label htmlFor="streetAddress">Street Address</label>
+        <label htmlFor="street_address">Street Address</label>
         <input
           type="text"
-          name="streetAddress"
-          id="streetAddress"
-          value={formValues.streetAddress}
+          name="street_address"
+          id="street_address"
+          value={formValues.street_address}
           placeholder="Enter your street address"
           onChange={handleChange}
         />
@@ -149,20 +149,20 @@ const RegistrationForm = () => {
           <option value="WY">WY</option>
         </select>
 
-        <label htmlFor="zipCode">Zip Code</label>
+        <label htmlFor="zip_code">Zip Code</label>
         <input
           type="text"
-          name="zipCode"
-          id="zipCode"
-          value={formValues.zipCode}
+          name="zip_code"
+          id="zip_code"
+          value={formValues.zip_code}
           placeholder="Enter your zip code"
           onChange={handleChange}
         />
-        <label htmlFor="dateOfBirth">Date of Birth</label>
+        <label htmlFor="date_of_birth">Date of Birth</label>
         <input
           type="date"
-          name="dateOfBirth"
-          id="dateOfBirth"
+          name="date_of_birth"
+          id="date_of_birth"
           onChange={handleChange}
         />
         <SecondaryButton>{buttonText.submit}</SecondaryButton>
