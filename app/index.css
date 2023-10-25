@@ -355,3 +355,10 @@ h5 {
 .social-icon {
   width: 2rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  .site-wrapper {
+    width: min(calc(100% - 2em), 50%);
+    margin: 0 auto;
+  }
+}

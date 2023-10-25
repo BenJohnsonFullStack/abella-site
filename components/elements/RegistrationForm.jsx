@@ -27,7 +27,7 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // add axios utility function
+    // add POST request
 
     setFormValues(initialFormValues);
   };

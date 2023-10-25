@@ -10,13 +10,15 @@ import {
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Nav />
       <Hero />
-      <About />
-      <OurTeam />
-      <SignUp />
+      <main className="site-wrapper">
+        <About />
+        <OurTeam />
+        <SignUp />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
