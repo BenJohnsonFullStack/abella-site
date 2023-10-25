@@ -21,10 +21,13 @@ const Footer = () => {
           <div className="socials">
             <h3>Follow Us</h3>
             <div className="social-links">
-              <a href="">
+              <a href="https://instagram.com/abellatotalhealth">
                 <FontAwesomeIcon icon={faInstagram} className="social-icon" />
               </a>
-              <a href="" className="social-icon">
+              <a
+                href="https://www.linkedin.com/company/abella-total-health"
+                className="social-icon"
+              >
                 <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
               </a>
             </div>
