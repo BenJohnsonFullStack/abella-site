@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { navLinks } from "@/constants";
 import { navIcon, menuIcon, closeIcon } from "@/assets";
 import Image from "next/image";
+import { scrollToTop } from "@/utils";
 
 const MobileNavbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -12,8 +14,10 @@ const MobileNavbar = () => {
     setToggle((prev) => setToggle(!prev));
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  const handleActive = (e) => {
+    const { text } = e.target;
+    setActive(text);
+    handleToggle();
   };
 
   return (
@@ -23,7 +27,10 @@ const MobileNavbar = () => {
           src={navIcon}
           alt="abella logo icon"
           className="nav-icon"
-          onClick={scrollToTop}
+          onClick={() => {
+            setActive("");
+            scrollToTop();
+          }}
         />
       </div>
 
@@ -35,6 +42,20 @@ const MobileNavbar = () => {
             className="nav-icon"
             onClick={handleToggle}
           />
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.id} onClick={handleActive}>
+                <a
+                  href={`#${link.id}`}
+                  className={`nav-link ${
+                    active === link.title ? "active" : ""
+                  }`}
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

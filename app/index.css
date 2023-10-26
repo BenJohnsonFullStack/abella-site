@@ -116,6 +116,14 @@ a {
   font-weight: 200;
 }
 
+li {
+  list-style: none;
+}
+
+.active {
+  color: var(--clr-primary-variant);
+}
+
 a {
   text-decoration: none;
   color: var(--clr-on-surface);

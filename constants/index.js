@@ -23,6 +23,21 @@ const highlights = [
   },
 ];
 
+const navLinks = [
+  {
+    id: "about",
+    title: "About Us",
+  },
+  {
+    id: "our-team",
+    title: "Our Team",
+  },
+  {
+    id: "sign-up",
+    title: "Sign Up",
+  },
+];
+
 const programs = [
   {
     id: 1,
@@ -82,4 +97,4 @@ const team = [
   },
 ];
 
-export { buttonText, highlights, programs, team };
+export { buttonText, highlights, navLinks, programs, team };
