@@ -16,7 +16,7 @@ model Subscriber {
   last_name String
   email String @unique
   phone String @unique
-  street_address String @unique
+  street_address String
   city String
   state String
   zip_code String

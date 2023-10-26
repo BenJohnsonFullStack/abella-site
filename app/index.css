@@ -342,6 +342,10 @@ h5 {
   padding: 0.5em 0.25em;
 }
 
+.submit-message {
+  padding-bottom: 2em;
+}
+
 .footer-container {
   background-color: var(--clr-surface);
   padding: 2em;

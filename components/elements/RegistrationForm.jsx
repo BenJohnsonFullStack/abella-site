@@ -17,6 +17,9 @@ const initialFormValues = {
 };
 
 const RegistrationForm = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const handleChange = (e) => {
@@ -24,12 +27,48 @@ const RegistrationForm = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
 
-    // add POST request
+    try {
+      // trim and lower case all form input responses
+      let newSubscriber = {};
 
-    setFormValues(initialFormValues);
+      for (let input in formValues) {
+        if (!formValues[input]) {
+          input = input.replaceAll("_", " ");
+          const inputField = input === "phone" ? "phone number" : input;
+          setError(`Please enter your ${inputField}.`);
+          return;
+        } else {
+          newSubscriber[input] = formValues[input].trim().toLowerCase();
+        }
+      }
+      // POST request
+      const response = await fetch("api/subscribers", {
+        method: "POST",
+        body: JSON.stringify(newSubscriber),
+      });
+
+      // set responses for form
+      if (response.ok) {
+        setMessage(
+          "Thanks for your submission! A member of our team will reach out to you as soon as possible."
+        );
+        setError("");
+      } else {
+        setError(
+          "Something went wrong. Please ensure that all fields are filled out and that you don't already have an existing account with us."
+        );
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      // reset form
+      setFormValues(initialFormValues);
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -160,12 +199,19 @@ const RegistrationForm = () => {
         />
         <label htmlFor="date_of_birth">Date of Birth</label>
         <input
-          type="date"
+          type="text"
           name="date_of_birth"
           id="date_of_birth"
+          placeholder="MM-DD-YYYY"
           onChange={handleChange}
         />
-        <SecondaryButton>{buttonText.submit}</SecondaryButton>
+        <SecondaryButton className="submit-btn">
+          {submitting ? "Submitting..." : buttonText.submit}
+        </SecondaryButton>
+        <div className="submit-message">
+          <p className="error">{error ? error : ""}</p>
+          <p>{message ? message : ""}</p>
+        </div>
       </form>
     </div>
   );
