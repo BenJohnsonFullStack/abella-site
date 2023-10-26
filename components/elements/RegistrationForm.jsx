@@ -11,7 +11,7 @@ const initialFormValues = {
   phone: "",
   street_address: "",
   city: "",
-  state: "",
+  state: null, // fix this!!!!
   zip_code: "",
   date_of_birth: "",
 };
@@ -136,10 +136,13 @@ const RegistrationForm = () => {
         <label htmlFor="state">State</label>
 
         {/* STATE DROPDOWN SELECTOR */}
-        <select className="dropdown" name="state" onChange={handleChange}>
-          <option value="Select Your State" placeholder="Select Your State">
-            Select Your State
-          </option>
+        <select
+          className="dropdown"
+          name="state"
+          onChange={handleChange}
+          value={formValues.state || ""}
+        >
+          <option value="Select Your State">Select Your State</option>
           <option value="AL">AL</option>
           <option value="AK">AK</option>
           <option value="AR">AR</option>
@@ -206,6 +209,7 @@ const RegistrationForm = () => {
         <input
           type="text"
           name="date_of_birth"
+          value={formValues.date_of_birth}
           id="date_of_birth"
           placeholder="MM-DD-YYYY"
           onChange={handleChange}
