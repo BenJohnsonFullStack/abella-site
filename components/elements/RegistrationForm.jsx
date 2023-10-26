@@ -11,7 +11,7 @@ const initialFormValues = {
   phone: "",
   street_address: "",
   city: "",
-  state: null, // fix this!!!!
+  state: null,
   zip_code: "",
   date_of_birth: "",
 };
@@ -218,8 +218,7 @@ const RegistrationForm = () => {
           {submitting ? "Submitting..." : buttonText.submit}
         </SecondaryButton>
         <div className="submit-message">
-          <p className="error">{error ? error : ""}</p>
-          <p>{message ? message : ""}</p>
+          <p className={error ? "error" : ""}>{error ? error : message}</p>
         </div>
       </form>
     </div>

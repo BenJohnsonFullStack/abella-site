@@ -160,6 +160,10 @@ h5 {
   font-style: italic;
 }
 
+.error {
+  color: var(--clr-danger);
+}
+
 /* GLOBAL NAV STYLES */
 .nav {
   background-color: var(--clr-bg);
