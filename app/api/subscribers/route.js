@@ -1,4 +1,4 @@
-// import { Subscriber } from "@/models";
+// import PrismaClient instance
 import { prisma } from "@/lib/prisma";
 
 export const POST = async (req) => {
