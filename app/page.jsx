@@ -8,7 +8,7 @@ import {
   SignUp,
 } from "@/components/sections";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <Nav />
