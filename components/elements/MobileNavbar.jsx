@@ -42,20 +42,22 @@ const MobileNavbar = () => {
             className="nav-icon"
             onClick={handleToggle}
           />
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.id} onClick={handleActive}>
-                <a
-                  href={`#${link.id}`}
-                  className={`nav-link ${
-                    active === link.title ? "active" : ""
-                  }`}
-                >
-                  {link.title}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className={toggle ? "mobile-dropdown" : "hidden"}>
+            <ul>
+              {navLinks.map((link) => (
+                <li key={link.id} onClick={handleActive}>
+                  <a
+                    href={`#${link.id}`}
+                    className={`nav-link ${
+                      active === link.title ? "active" : ""
+                    }`}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -116,6 +116,10 @@ a {
   font-weight: 200;
 }
 
+.hidden {
+  display: none;
+}
+
 li {
   list-style: none;
 }
