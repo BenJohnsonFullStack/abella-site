@@ -142,7 +142,7 @@ const RegistrationForm = () => {
           onChange={handleChange}
           value={formValues.state || ""}
         >
-          <option value="Select Your State">Select Your State</option>
+          <option value="">Select Your State</option>
           <option value="AL">AL</option>
           <option value="AK">AK</option>
           <option value="AR">AR</option>
