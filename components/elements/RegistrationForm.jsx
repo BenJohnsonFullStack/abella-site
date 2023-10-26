@@ -32,16 +32,21 @@ const RegistrationForm = () => {
     setSubmitting(true);
 
     try {
-      // trim and lower case all form input responses
+      // new subscriber container for manipulation/submission
       let newSubscriber = {};
 
       for (let input in formValues) {
+        // ensure all fields are filled out
         if (!formValues[input]) {
+          // replace underscores with white space
           input = input.replaceAll("_", " ");
+          // customize message for missing phone number
           const inputField = input === "phone" ? "phone number" : input;
+          // set error message
           setError(`Please enter your ${inputField}.`);
           return;
         } else {
+          // trim and lower case all form input responses
           newSubscriber[input] = formValues[input].trim().toLowerCase();
         }
       }
