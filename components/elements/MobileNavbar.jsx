@@ -8,10 +8,12 @@ import { scrollToTop } from "@/utils";
 
 const MobileNavbar = () => {
   const [toggle, setToggle] = useState(false);
+  console.log(toggle);
   const [active, setActive] = useState("");
 
   const handleToggle = () => {
-    setToggle((prev) => setToggle(!prev));
+    setToggle((prev) => !prev);
+    console.log(toggle);
   };
 
   const handleActive = (e) => {
