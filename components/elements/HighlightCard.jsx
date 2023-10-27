@@ -4,20 +4,20 @@ import { TextSection, SecondaryButton } from ".";
 
 const HighlightCard = ({ image, title, description }) => {
   return (
-    <div className="card">
+    <div className="highlight-card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <Image
         src={image}
         alt="background image for highlight card"
         className="highlight-image"
       />
-      <div className="card-content">
+      <div className="highlight-card-content">
         <TextSection>
           <h3>{title}</h3>
           <p>{description}</p>
         </TextSection>
+        <SecondaryButton>{buttonText.action}</SecondaryButton>
       </div>
-      <SecondaryButton>{buttonText.action}</SecondaryButton>
     </div>
   );
 };

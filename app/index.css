@@ -306,6 +306,28 @@ h5 {
   padding: 2em;
 }
 
+.highlight-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  background-color: var(--clr-surface);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  margin: 2em;
+  width: min(100% - 2em, 50em);
+  box-shadow: var(--shd-card);
+}
+
+.highlight-card-content {
+  padding: 2em;
+}
+
 /* CARD CONTENT PADDING */
 .card-content {
   padding: 2em;
@@ -326,8 +348,8 @@ h5 {
 /* ACTION CARD BUTTON STYLES */
 .action-btn-container {
   text-align: center;
-  margin: 2em 0;
-  padding-bottom: 2em;
+  margin: 4em 0;
+  margin-bottom: 2em;
 }
 
 /* SECONDARY BUTTON STYLES */
