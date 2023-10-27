@@ -91,7 +91,7 @@ const team = [
     image: kaitlyn,
     name: "Kaitlyn Dillard",
     role: "Health Coach",
-    credentials: "MSN, RN, Certified Integrative Health Coach",
+    credentials: "MSN, RN, IIN Health Coach",
     description:
       "I am a Registered Nurse, Integrative Health Coach, and Yoga Instructor with primary experience in maternal and postpartum health and chronic disease management. I have seen firsthand how improving your health can improve all other areas of your life, and I can't wait to meet you and join you on your journey of hope health, and happiness.",
   },
