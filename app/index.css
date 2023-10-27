@@ -271,6 +271,7 @@ h5 {
 .card-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -281,6 +282,28 @@ h5 {
   width: min(100%, 20em);
   overflow: hidden;
   box-shadow: var(--shd-card);
+}
+
+.team-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: var(--clr-surface);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  margin: 2em;
+  width: min(100% - 2em, 50em);
+  box-shadow: var(--shd-card);
+}
+
+.team-card-content {
+  padding: 2em;
 }
 
 /* CARD CONTENT PADDING */
@@ -320,10 +343,10 @@ h5 {
 /* STAFF HEADSHOT STYLES */
 .team-member-image {
   border-radius: 9999px;
-  width: 10em;
+  width: 18em;
   height: auto;
   margin: 0 auto;
-  margin-top: 2em;
+  padding: 2em;
 }
 
 .team-member-title {

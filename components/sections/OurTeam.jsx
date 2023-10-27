@@ -8,7 +8,7 @@ const OurTeam = () => {
         <h2>Our Team</h2>
         <div className="team-member-container">
           {team.map((member) => (
-            <div key={member.id} className="card-container">
+            <div key={member.id} className="team-card-container">
               <TeamMemberCard {...member} />
             </div>
           ))}

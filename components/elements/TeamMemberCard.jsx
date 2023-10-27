@@ -3,13 +3,13 @@ import { TextSection } from ".";
 
 const TeamMemberCard = ({ image, name, role, credentials, description }) => {
   return (
-    <div className="card">
+    <div className="team-card">
       <Image
         src={image}
         alt="team member image"
         className="team-member-image"
       />
-      <div className="card-content">
+      <div className="team-card-content">
         <TextSection>
           <div className="team-member-title">
             <h3>{name}</h3>
