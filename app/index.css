@@ -317,7 +317,7 @@ h5 {
   background-color: var(--clr-surface);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   align-items: center;
   margin: 2em;
   width: min(100% - 2em, 50em);
@@ -433,9 +433,10 @@ h5 {
   width: 2rem;
 }
 
-/* @media only screen and (min-width: 1024px) {
-  .site-wrapper {
-    width: min(100% - 2em, 50%);
-    margin: 0 auto;
+@media only screen and (min-width: 764px) {
+  .highlight-image {
+    width: auto;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
   }
-} */
+}
