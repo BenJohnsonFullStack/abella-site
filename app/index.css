@@ -211,10 +211,6 @@ select {
   padding: 1em 2em;
 }
 
-.desktop-nav-container {
-  justify-content: space-around;
-}
-
 .logo-icon-container {
   display: flex;
   gap: 20px;
