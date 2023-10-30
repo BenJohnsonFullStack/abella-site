@@ -167,8 +167,12 @@ h3 {
   padding-bottom: 1em;
 }
 
+h4 {
+  font-size: var(--fs-600);
+}
+
 h5 {
-  font-size: var(--fs-300);
+  font-size: var(--fs-500);
   font-family: "Geologica", sans-serif;
 }
 
@@ -264,10 +268,12 @@ select {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
 
-  /* mobile browser height for browser bars */
-  min-height: -webkit-fill-available;
+  /* mobile browsers accounted for */
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* HERO LOGO SIZE */
