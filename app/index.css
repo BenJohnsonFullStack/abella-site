@@ -191,11 +191,23 @@ h5 {
 }
 
 /* MOBILE NAV STYLES */
-.mobile-nav-container {
+.mobile-nav-container,
+.desktop-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
+}
+
+.desktop-nav-container {
+  justify-content: space-around;
+}
+
+.logo-icon-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* MOBILE NAV ICON STYLES */
@@ -226,6 +238,17 @@ h5 {
 
 .nav-link {
   font-size: var(--fs-500);
+}
+
+.vertical-line {
+  height: 30px;
+  width: 2px;
+  background-color: var(--clr-on-bg);
+}
+
+.desktop-navlink-list {
+  display: flex;
+  gap: 30px;
 }
 
 /* HERO BG STYLES */
@@ -340,7 +363,7 @@ h5 {
   background-color: var(--clr-surface);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   align-items: center;
   margin: 2em;
   width: min(100% - 2em, 50em);
@@ -358,7 +381,7 @@ h5 {
 
 /* HIGHLIGHT IMAGE STYLES */
 .highlight-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
 }
@@ -457,7 +480,7 @@ h5 {
   width: 2rem;
 }
 
-@media only screen and (min-width: 764px) {
+@media only screen and (min-width: 664px) {
   .highlight-image {
     width: auto;
     height: 100%;

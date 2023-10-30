@@ -7,14 +7,14 @@ const useScreenSize = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setIsSmall(window.innerWidth <= 763);
-      setIsMedium(window.innerWidth > 763 && window.innerWidth <= 1024);
+      setIsSmall(window.innerWidth <= 663);
+      setIsMedium(window.innerWidth > 663 && window.innerWidth <= 1024);
       setIsLarge(window.innerWidth > 1024);
     }
 
     const handleResize = () => {
-      setIsSmall(window.innerWidth <= 763);
-      setIsMedium(window.innerWidth > 763 && window.innerWidth <= 1024);
+      setIsSmall(window.innerWidth <= 663);
+      setIsMedium(window.innerWidth > 663 && window.innerWidth <= 1024);
       setIsLarge(window.innerWidth > 1024);
     };
 
