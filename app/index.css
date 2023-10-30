@@ -168,7 +168,7 @@ h5 {
   font-family: "Geologica", sans-serif;
 }
 
-input[type="date"] {
+select {
   display: block;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
