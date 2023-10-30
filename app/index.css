@@ -258,7 +258,7 @@ h5 {
   padding: 0.75rem 4rem;
   background: var(--clr-accent);
   color: var(--clr-on-surface);
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
   border: 0;
   position: relative;
   border-radius: var(--border-radius);
@@ -383,6 +383,7 @@ h5 {
   background: var(--clr-secondary-variant);
   box-shadow: var(--shd-btn);
   cursor: pointer;
+  font-size: var(--fs-400);
 }
 
 /* STAFF HEADSHOT STYLES */
