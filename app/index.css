@@ -265,7 +265,7 @@ select {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 /* HERO LOGO SIZE */
@@ -289,7 +289,7 @@ select {
   padding: 0.75rem 4rem;
   background: var(--clr-accent);
   color: var(--clr-on-surface);
-  font-size: var(--fs-500);
+  font-size: var(--fs-600);
   border: 0;
   position: relative;
   border-radius: var(--border-radius);
@@ -396,9 +396,10 @@ select {
   border: none;
   border-radius: 5px;
   background: var(--clr-secondary-variant);
+  color: var(--clr-bg);
   box-shadow: var(--shd-btn);
   cursor: pointer;
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
 }
 
 /* STAFF HEADSHOT STYLES */
