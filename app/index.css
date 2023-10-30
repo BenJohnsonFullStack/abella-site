@@ -172,6 +172,7 @@ select {
   appearance: auto;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 5px;
 }
 
 .italic {
@@ -263,7 +264,10 @@ select {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+
+  /* mobile browser height for browser bars */
+  min-height: -webkit-fill-available;
 }
 
 /* HERO LOGO SIZE */
