@@ -43,7 +43,7 @@ const MobileNavbar = () => {
             onClick={handleToggle}
           />
           <div className={toggle ? "mobile-dropdown" : "hidden"}>
-            <ul>
+            <ul className="navlink-list">
               {navLinks.map((link) => (
                 <li key={link.id} onClick={handleActive}>
                   <a

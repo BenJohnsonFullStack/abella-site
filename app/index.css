@@ -181,7 +181,7 @@ h5 {
   background-color: var(--clr-bg);
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 98;
 }
 
 /* GRADIENT NAV BORDER */
@@ -203,6 +203,29 @@ h5 {
   width: 2rem;
   height: auto;
   cursor: pointer;
+}
+
+.mobile-menu {
+  position: relative;
+}
+
+.mobile-dropdown {
+  background-color: var(--clr-surface);
+  border-radius: 10px;
+  min-width: 130px;
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  right: 0px;
+}
+
+.navlink-list {
+  width: min(100% - 0.5em, 20ch);
+  padding: 0.5em;
+}
+
+.nav-link {
+  font-size: var(--fs-500);
 }
 
 /* HERO BG STYLES */
