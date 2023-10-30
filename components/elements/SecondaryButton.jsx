@@ -1,7 +1,9 @@
 const SecondaryButton = ({ children }) => {
   return (
     <div className="action-btn-container">
-      <button className="btn-secondary">{children}</button>
+      <a href="#sign-up">
+        <button className="btn-secondary">{children}</button>
+      </a>
     </div>
   );
 };

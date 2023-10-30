@@ -8,7 +8,9 @@ const Hero = () => {
         <Logo />
       </div>
       <div className="hero-btn-container">
-        <PrimaryButton>{buttonText.schedule}</PrimaryButton>
+        <a href="#sign-up">
+          <PrimaryButton>{buttonText.schedule}</PrimaryButton>
+        </a>
       </div>
       <div className="nav-border border-gap"></div>
     </section>
