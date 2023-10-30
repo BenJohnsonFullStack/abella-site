@@ -12,9 +12,9 @@ const About = () => {
               <HighlightCard {...highlight} />
             </div>
           ))}
-          <div className="card-container">
-            <ActionCard />
-          </div>
+        </div>
+        <div className="action-card-container">
+          <ActionCard />
         </div>
       </section>
     </>

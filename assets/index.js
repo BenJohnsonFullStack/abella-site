@@ -7,6 +7,7 @@ import kaitlyn from "./team/kaitlyn.webp";
 import watermelon from "./watermelon.webp";
 import watermelonLarge from "./watermelonLarge.webp";
 import hands from "./hands.webp";
+import handsLarge from "./handsLarge.webp";
 import sunset from "./sunset.webp";
 import sunsetLarge from "./sunsetLarge.webp";
 
@@ -20,6 +21,7 @@ export {
   watermelon,
   watermelonLarge,
   hands,
+  handsLarge,
   sunset,
   sunsetLarge,
 };

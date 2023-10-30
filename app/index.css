@@ -168,6 +168,14 @@ h5 {
   font-family: "Geologica", sans-serif;
 }
 
+input[type="date"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+  appearance: auto;
+}
+
 .italic {
   font-style: italic;
 }
@@ -330,14 +338,18 @@ h5 {
   box-shadow: var(--shd-card);
 }
 
-.team-card-container {
+.team-card-container,
+.highlight-card-container,
+.action-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.team-card {
+.team-card,
+.highlight-card,
+.action-card {
   background-color: var(--clr-surface);
   border-radius: 10px;
   display: grid;
@@ -348,29 +360,9 @@ h5 {
   box-shadow: var(--shd-card);
 }
 
-.team-card-content {
-  padding: 2em;
-}
-
-.highlight-card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.highlight-card {
-  background-color: var(--clr-surface);
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  align-items: center;
-  margin: 2em;
-  width: min(100% - 2em, 50em);
-  box-shadow: var(--shd-card);
-}
-
-.highlight-card-content {
+.team-card-content,
+.highlight-card-content,
+.action-card-content {
   padding: 2em;
 }
 

@@ -1,14 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import { TextSection, SecondaryButton } from ".";
 import { buttonText, programs } from "@/constants";
-import { hands } from "@/assets";
+import { hands, handsLarge } from "@/assets";
+import { useScreenSize } from "@/hooks";
 
 const ActionCard = () => {
+  const [isSmall] = useScreenSize();
+
   return (
-    <div className="card">
+    <div className="action-card">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <Image src={hands} alt="programs image" className="highlight-image" />
-      <div className="card-content">
+      <Image
+        src={isSmall ? hands : handsLarge}
+        alt="programs image"
+        className="highlight-image"
+      />
+      <div className="action-card-content">
         <TextSection>
           <h3>Programs</h3>
           <ul>
@@ -20,8 +29,8 @@ const ActionCard = () => {
             ))}
           </ul>
         </TextSection>
+        <SecondaryButton>{buttonText.action}</SecondaryButton>
       </div>
-      <SecondaryButton>{buttonText.action}</SecondaryButton>
     </div>
   );
 };
