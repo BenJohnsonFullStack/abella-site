@@ -116,6 +116,10 @@ a {
   font-weight: 200;
 }
 
+p {
+  font-size: var(--fs-600);
+}
+
 .hidden {
   display: none;
 }
@@ -144,7 +148,7 @@ li {
 }
 
 li span {
-  font-size: var(--fs-400);
+  font-size: var(--fs-500);
 }
 
 h1 {
@@ -241,10 +245,6 @@ select {
 .navlink-list {
   width: min(100% - 0.5em, 20ch);
   padding: 0.5em;
-}
-
-.nav-link {
-  font-size: var(--fs-500);
 }
 
 .vertical-line {
