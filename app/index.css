@@ -169,11 +169,9 @@ h5 {
 }
 
 select {
-  display: block;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  min-height: 1.2em;
   appearance: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .italic {
