@@ -239,7 +239,7 @@ select {
 .mobile-dropdown {
   background: linear-gradient(45deg, #00002e, #24166d);
   border-radius: 10px;
-  min-width: 140px;
+  min-width: 175px;
   position: absolute;
   z-index: 99;
   top: 30px;
