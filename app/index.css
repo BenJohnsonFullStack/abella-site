@@ -42,7 +42,7 @@
     #604442
   );
   --clr-bg: #00002e;
-  --clr-surface: #24166d;
+  --clr-surface: #120f59;
   --clr-danger: #d32020;
   --clr-success: #9fd37d;
   --clr-black: #010101;
@@ -117,15 +117,11 @@ a {
 }
 
 p {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
 }
 
 .hidden {
   display: none;
-}
-
-li {
-  list-style: none;
 }
 
 .active {
@@ -142,6 +138,7 @@ a:hover {
   color: var(--clr-primary-variant);
 }
 li {
+  list-style: none;
   font-size: var(--fs-600);
   padding: 0.3em 0;
   padding-left: 1em;
@@ -294,7 +291,7 @@ select {
   --border-width: 2.5px;
   --border-radius: 5px;
 
-  padding: 0.75rem 4rem;
+  padding: 1rem 4rem;
   background: var(--clr-accent);
   color: var(--clr-on-surface);
   font-size: var(--fs-600);
