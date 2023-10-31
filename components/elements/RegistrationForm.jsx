@@ -40,8 +40,10 @@ const RegistrationForm = () => {
         if (!formValues[input]) {
           // replace underscores with white space
           input = input.replaceAll("_", " ");
+
           // customize message for missing phone number
           const inputField = input === "phone" ? "phone number" : input;
+
           // set error message
           setError(`Please enter your ${inputField}.`);
           return;
@@ -50,6 +52,7 @@ const RegistrationForm = () => {
           newSubscriber[input] = formValues[input].trim().toLowerCase();
         }
       }
+
       // POST request
       const response = await fetch("api/subscribers", {
         method: "POST",
@@ -61,8 +64,10 @@ const RegistrationForm = () => {
         setMessage(
           "Thanks for your submission! A member of our team will reach out to you as soon as possible."
         );
+        setFormValues(initialFormValues);
         setError("");
       } else {
+        // form validation error
         setError(
           "Something went wrong. Please ensure that all fields are filled out and that you don't already have an existing account with us."
         );
@@ -70,8 +75,6 @@ const RegistrationForm = () => {
     } catch (err) {
       setError("Something went wrong. Please try again.");
     } finally {
-      // reset form
-      setFormValues(initialFormValues);
       setSubmitting(false);
     }
   };
