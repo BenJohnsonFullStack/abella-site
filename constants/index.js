@@ -4,7 +4,6 @@ import {
   kaitlyn,
   watermelon,
   watermelonLarge,
-  hands,
   sunset,
   sunsetLarge,
 } from "@/assets";
