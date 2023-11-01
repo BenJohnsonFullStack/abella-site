@@ -424,12 +424,16 @@ select {
   padding: 4em 0;
 }
 
+.registration-form {
+  margin-top: 2em;
+}
+
 /* FORM STYLES */
 .input-field {
-  padding: 2em;
+  padding: 1em 3em 0 3em;
   display: flex;
   flex-direction: column;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 
 /* LABEL PADDING */
