@@ -17,19 +17,23 @@ const initialFormValues = {
 };
 
 const RegistrationForm = () => {
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState("");
-  const [message, setMessage] = useState("");
-  const [formValues, setFormValues] = useState(initialFormValues);
+  const [state, setState] = useState({
+    submitting: false,
+    error: "",
+    message: "",
+    formValues: initialFormValues,
+  });
+
+  const { submitting, error, message, formValues } = state;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
+    setState({ ...state, formValues: { ...formValues, [name]: value } });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true);
+    setState({ ...state, submitting: true });
 
     try {
       // new subscriber container for manipulation/submission
@@ -45,7 +49,10 @@ const RegistrationForm = () => {
           const inputField = input === "phone" ? "phone number" : input;
 
           // set error message
-          setError(`Please enter your ${inputField}.`);
+          setState((prev) => ({
+            ...prev,
+            error: `Please enter your ${inputField}.`,
+          }));
           return;
         } else {
           // trim and lower case all form input responses
@@ -61,21 +68,28 @@ const RegistrationForm = () => {
 
       // set responses for form
       if (response.ok) {
-        setMessage(
-          "Thanks for your submission! A member of our team will reach out to you as soon as possible."
-        );
-        setFormValues(initialFormValues);
-        setError("");
+        setState((prev) => ({
+          ...prev,
+          error: "",
+          message:
+            "Thanks for your submission. A member of our team will reach out to you as soon as possible",
+          formValues: initialFormValues,
+        }));
       } else {
         // form validation error
-        setError(
-          "Something went wrong. Please ensure that all fields are filled out and that you don't already have an existing account with us."
-        );
+        setState((prev) => ({
+          ...prev,
+          error:
+            "Something went wrong. Please ensure that all fields are filled out and that you don't already have an existing account with us.",
+        }));
       }
     } catch (err) {
-      setError("Something went wrong. Please try again.");
+      setState((prev) => ({
+        ...prev,
+        error: "Something went wrong. Please try again.",
+      }));
     } finally {
-      setSubmitting(false);
+      setState((prev) => ({ ...prev, submitting: false }));
     }
   };
 
