@@ -33,6 +33,280 @@ const highlights = [
   },
 ];
 
+const inputFields = [
+  {
+    id: "first_name",
+    label: "First Name",
+    name: "first_name",
+    placeholder: "Enter your first name",
+    type: "text",
+  },
+  {
+    id: "last_name",
+    label: "Last Name",
+    name: "last_name",
+    placeholder: "Enter your last name",
+    type: "text",
+  },
+  {
+    id: "email",
+    label: "Email",
+    name: "email",
+    placeholder: "Enter your email",
+    type: "email",
+  },
+  {
+    id: "phone",
+    label: "Phone Number",
+    name: "phone",
+    placeholder: "Enter your phone number",
+    type: "text",
+  },
+  {
+    id: "street_address",
+    label: "Street Address",
+    name: "street_address",
+    placeholder: "Enter your street address",
+    type: "text",
+  },
+  {
+    id: "city",
+    label: "City",
+    name: "city",
+    placeholder: "Enter your city",
+    type: "text",
+  },
+  {
+    id: "state",
+    label: "State",
+    name: "state",
+    options: [
+      {
+        text: "Select Your State",
+        value: "",
+      },
+      {
+        text: "AL",
+        value: "AL",
+      },
+      {
+        text: "AK",
+        value: "AK",
+      },
+      {
+        text: "AR",
+        value: "AR",
+      },
+      {
+        text: "AZ",
+        value: "AZ",
+      },
+      {
+        text: "CA",
+        value: "CA",
+      },
+      {
+        text: "CO",
+        value: "CO",
+      },
+      {
+        text: "CT",
+        value: "CT",
+      },
+      {
+        text: "DC",
+        value: "DC",
+      },
+      {
+        text: "DE",
+        value: "DE",
+      },
+      {
+        text: "FL",
+        value: "FL",
+      },
+      {
+        text: "GA",
+        value: "GA",
+      },
+      {
+        text: "HI",
+        value: "HI",
+      },
+      {
+        text: "IA",
+        value: "IA",
+      },
+      {
+        text: "ID",
+        value: "ID",
+      },
+      {
+        text: "IL",
+        value: "IL",
+      },
+      {
+        text: "IN",
+        value: "IN",
+      },
+      {
+        text: "KS",
+        value: "KS",
+      },
+      {
+        text: "KY",
+        value: "KY",
+      },
+      {
+        text: "LA",
+        value: "LA",
+      },
+      {
+        text: "MA",
+        value: "MA",
+      },
+      {
+        text: "MD",
+        value: "MD",
+      },
+      {
+        text: "ME",
+        value: "ME",
+      },
+      {
+        text: "MI",
+        value: "MI",
+      },
+      {
+        text: "MN",
+        value: "MN",
+      },
+      {
+        text: "MO",
+        value: "MO",
+      },
+      {
+        text: "MS",
+        value: "MS",
+      },
+      {
+        text: "MT",
+        value: "MT",
+      },
+      {
+        text: "NC",
+        value: "NC",
+      },
+      {
+        text: "ND",
+        value: "ND",
+      },
+      {
+        text: "NE",
+        value: "NE",
+      },
+      {
+        text: "NH",
+        value: "NH",
+      },
+      {
+        text: "NJ",
+        value: "NJ",
+      },
+      {
+        text: "NM",
+        value: "NM",
+      },
+      {
+        text: "NV",
+        value: "NV",
+      },
+      {
+        text: "NY",
+        value: "NY",
+      },
+      {
+        text: "OH",
+        value: "OH",
+      },
+      {
+        text: "OK",
+        value: "OK",
+      },
+      {
+        text: "OR",
+        value: "OR",
+      },
+      {
+        text: "PA",
+        value: "PA",
+      },
+      {
+        text: "RI",
+        value: "RI",
+      },
+      {
+        text: "SC",
+        value: "SC",
+      },
+      {
+        text: "SD",
+        value: "SD",
+      },
+      {
+        text: "TN",
+        value: "TN",
+      },
+      {
+        text: "TX",
+        value: "TX",
+      },
+      {
+        text: "UT",
+        value: "UT",
+      },
+      {
+        text: "VT",
+        value: "VT",
+      },
+      {
+        text: "VA",
+        value: "VA",
+      },
+      {
+        text: "WA",
+        value: "WA",
+      },
+      {
+        text: "WI",
+        value: "WI",
+      },
+      {
+        text: "WV",
+        value: "WV",
+      },
+      {
+        text: "WY",
+        value: "WY",
+      },
+    ],
+  },
+  {
+    id: "zip_code",
+    label: "Zip Code",
+    name: "zip_code",
+    placeholder: "Enter your zip code",
+    type: "text",
+  },
+  {
+    id: "date_of_birth",
+    label: "Date of Birth",
+    name: "date_of_birth",
+    placeholder: "MM-DD-YYYY",
+    type: "text",
+  },
+];
+
 const navLinks = [
   {
     id: "about",
@@ -107,4 +381,4 @@ const team = [
   },
 ];
 
-export { buttonText, highlights, navLinks, programs, team };
+export { buttonText, highlights, inputFields, navLinks, programs, team };

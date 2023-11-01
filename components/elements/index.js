@@ -1,5 +1,6 @@
 import ActionCard from "./ActionCard";
 import ContactInfo from "./ContactInfo";
+import CustomInput from "./CustomInput";
 import DesktopNavbar from "./DesktopNavbar";
 import HighlightCard from "./HighlightCard";
 import Logo from "./Logo";
@@ -14,6 +15,7 @@ import TextSection from "./TextSection";
 export {
   ActionCard,
   ContactInfo,
+  CustomInput,
   DesktopNavbar,
   HighlightCard,
   Logo,

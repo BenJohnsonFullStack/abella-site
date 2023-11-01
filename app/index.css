@@ -425,7 +425,7 @@ select {
 }
 
 /* FORM STYLES */
-.registration-form {
+.input-field {
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -434,7 +434,6 @@ select {
 
 /* LABEL PADDING */
 .registration-form label {
-  margin-top: 1em;
   padding-bottom: 0.25em;
 }
 
@@ -445,7 +444,8 @@ select {
 }
 
 .submit-message {
-  padding-bottom: 2em;
+  padding: 2em;
+  padding-top: 0;
 }
 
 .footer-container {
