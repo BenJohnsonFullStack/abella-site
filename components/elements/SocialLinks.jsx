@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faPatreon,
+} from "@fortawesome/free-brands-svg-icons";
 
 const SocialLinks = () => {
   return (
@@ -15,6 +19,13 @@ const SocialLinks = () => {
           className="social-icon"
         >
           <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/abella-total-health"
+          target="_blank"
+          className="social-icon"
+        >
+          <FontAwesomeIcon icon={faPatreon} className="social-icon" />
         </a>
       </div>
     </div>
