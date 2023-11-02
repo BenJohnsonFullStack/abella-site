@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { CustomInput, SecondaryButton } from ".";
+import { CustomInput, Button } from ".";
 import { buttonText, inputFields } from "@/constants";
-import { Resend } from "resend";
-import { WelcomeEmail } from "@/emails";
 
 const initialFormValues = {
   first_name: "",
@@ -154,9 +152,9 @@ const RegistrationForm = () => {
             )}
           </div>
         ))}
-        <SecondaryButton className="submit-btn">
+        <Button styleClass="btn-secondary">
           {submitting ? "Submitting..." : buttonText.submit}
-        </SecondaryButton>
+        </Button>
         <div className="submit-message">
           <p className={error ? "error" : ""}>{error ? error : message}</p>
         </div>

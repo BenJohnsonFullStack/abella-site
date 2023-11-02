@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { TextSection, SecondaryButton } from ".";
+import { TextSection, Button } from ".";
 import { buttonText, programs } from "@/constants";
 import { hands, handsLarge } from "@/assets";
 import { useScreenSize } from "@/hooks";
@@ -29,7 +29,9 @@ const ActionCard = () => {
             ))}
           </ul>
         </TextSection>
-        <SecondaryButton>{buttonText.action}</SecondaryButton>
+        <Button styleClass="btn-secondary" link="#sign-up">
+          {buttonText.action}
+        </Button>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ const highlights = [
     id: 1,
     smallImg: watermelon,
     largeImg: watermelonLarge,
+    link: "#sign-up",
     title: "Who We Are.",
     description:
       "Focusing on areas such as nutrition, exercise, stress management, and overall self-care, our qualified coaches aim to empower individuals to take charge of their health and make sustainable choices that align with their goals. We provide personalized strategies tailored to each client's unique needs, helping them cultivate healthier habits, boost energy levels, manage weight, reduce stress, and improve their overall quality of life.",
@@ -27,6 +28,7 @@ const highlights = [
     id: 2,
     smallImg: sunset,
     largeImg: sunsetLarge,
+    link: "#sign-up",
     title: "The Inspire Program.",
     description:
       "Motivation and inspiration drives us to be successful and creative. Here at Abella we thrive on your success. That's why we created Inspire Points to help motivate and inspire you to stay engaged with your health coach and indivudualized wellness program. Your participation will earn points that provide you with free benefits such as health coaching sessions, yoga, fitness, or energy healing sessions, Abella gear, meal plans, and much more.",

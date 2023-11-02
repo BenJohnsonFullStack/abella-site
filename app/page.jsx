@@ -7,6 +7,7 @@ import {
   OurTeam,
   SignUp,
 } from "@/components/sections";
+import { Test } from "@/emails";
 
 export default async function Home() {
   return (

@@ -1,4 +1,4 @@
-import { Logo, PrimaryButton } from "@/components/elements";
+import { Logo, Button } from "@/components/elements";
 import { buttonText } from "@/constants";
 
 const Hero = () => {
@@ -7,11 +7,9 @@ const Hero = () => {
       <div className="hero-logo-container">
         <Logo />
       </div>
-      <div className="hero-btn-container">
-        <a href="#sign-up">
-          <PrimaryButton>{buttonText.schedule}</PrimaryButton>
-        </a>
-      </div>
+      <Button styleClass="btn-primary" link="#sign-up">
+        {buttonText.schedule}
+      </Button>
       <div className="nav-border border-gap"></div>
     </section>
   );

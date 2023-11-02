@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { buttonText } from "@/constants";
-import { TextSection, SecondaryButton } from ".";
+import { TextSection, Button } from ".";
 import { useScreenSize } from "@/hooks";
 
-const HighlightCard = ({ smallImg, largeImg, title, description }) => {
+const HighlightCard = ({ smallImg, largeImg, title, description, link }) => {
   const [isSmall] = useScreenSize();
 
   return (
@@ -21,7 +21,9 @@ const HighlightCard = ({ smallImg, largeImg, title, description }) => {
           <h3>{title}</h3>
           <p>{description}</p>
         </TextSection>
-        <SecondaryButton>{buttonText.action}</SecondaryButton>
+        <Button styleClass="btn-secondary" link={link}>
+          {buttonText.action}
+        </Button>
       </div>
     </div>
   );
