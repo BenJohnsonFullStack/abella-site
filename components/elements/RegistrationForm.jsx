@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { CustomInput, SecondaryButton } from ".";
 import { buttonText, inputFields } from "@/constants";
+import { Resend } from "resend";
+import { WelcomeEmail } from "@/emails";
 
 const initialFormValues = {
   first_name: "",
@@ -29,6 +31,28 @@ const RegistrationForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState({ ...state, formValues: { ...formValues, [name]: value } });
+  };
+
+  const handleEmail = async () => {
+    // send email
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formValues),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Email sent:", result);
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -73,7 +97,7 @@ const RegistrationForm = () => {
           error: "",
           message:
             "Thanks for your submission. A member of our team will reach out to you as soon as possible",
-          formValues: initialFormValues,
+          // formValues: initialFormValues,
         }));
       } else {
         // form validation error
@@ -95,7 +119,13 @@ const RegistrationForm = () => {
 
   return (
     <div className="form-container card">
-      <form className="registration-form" onSubmit={handleSubmit}>
+      <form
+        className="registration-form"
+        onSubmit={(e) => {
+          handleSubmit(e);
+          handleEmail();
+        }}
+      >
         {inputFields.map((field, index) => (
           <div key={index} className="input-field">
             {!field.options ? (
@@ -112,6 +142,7 @@ const RegistrationForm = () => {
                   name={field.name}
                   id={field.id}
                   onChange={handleChange}
+                  value={formValues[field.name] || ""}
                 >
                   {field.options.map((option, index) => (
                     <option key={index} value={option.value}>

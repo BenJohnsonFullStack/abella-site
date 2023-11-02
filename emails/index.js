@@ -1,3 +1,4 @@
-import Welcome from "./Welcome";
+import WelcomeEmail from "./WelcomeEmail";
+import Test from "./Test";
 
-export { Welcome };
+export { WelcomeEmail, Test };
