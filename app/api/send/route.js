@@ -13,7 +13,7 @@ export async function POST(req) {
       from: "Abella Total Health <contact@abella-health.com>",
       to: `${email}`,
       subject: `Welcome, ${formattedName}`,
-      react: <Test first_name={formattedName} />,
+      react: <WelcomeEmail first_name={formattedName} />,
     });
 
     return new Response(JSON.stringify(data), { status: 201 });
