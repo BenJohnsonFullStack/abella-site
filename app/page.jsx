@@ -1,6 +1,5 @@
 import {
   About,
-  Contact,
   Footer,
   Hero,
   Nav,
