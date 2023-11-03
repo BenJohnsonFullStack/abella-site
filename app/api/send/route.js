@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { WelcomeEmail, Test } from "@/emails";
+import { Test } from "@/emails";
 
 export async function POST(req) {
   const { first_name, email } = await req.json();
