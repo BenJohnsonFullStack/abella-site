@@ -2,6 +2,7 @@ import { Resend } from "resend";
 import { Test } from "@/emails";
 
 export async function POST(req) {
+  // get subscriber and format name for email
   const subscriber = await req.json();
   const formattedName =
     subscriber.first_name.charAt(0).toUpperCase() +
