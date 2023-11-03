@@ -44,7 +44,7 @@ const RegistrationForm = () => {
 
       if (response.ok) {
         const result = await response.json();
-        console.log("Email sent:", result);
+        return result;
       } else {
         console.error("Failed to send email");
       }
