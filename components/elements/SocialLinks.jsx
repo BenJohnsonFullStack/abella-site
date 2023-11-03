@@ -21,7 +21,7 @@ const SocialLinks = () => {
           <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
         </a>
         <a
-          href="https://www.linkedin.com/company/abella-total-health"
+          href="https://patreon.com/the_holistic_yogi"
           target="_blank"
           className="social-icon"
         >
