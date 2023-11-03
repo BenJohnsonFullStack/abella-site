@@ -95,7 +95,7 @@ const RegistrationForm = () => {
           error: "",
           message:
             "Thanks for your submission. A member of our team will reach out to you as soon as possible",
-          // formValues: initialFormValues,
+          formValues: initialFormValues,
         }));
       } else {
         // form validation error
