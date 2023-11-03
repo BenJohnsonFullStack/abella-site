@@ -262,11 +262,7 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
 
-  /* mobile browsers accounted for */
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* min-height: 100vh; */
 }
 
 /* HERO LOGO SIZE */
@@ -279,7 +275,7 @@ select {
 /* HERO BUTTON POSITION */
 .hero-btn-container {
   text-align: center;
-  margin-top: 16rem;
+  margin-top: 8rem;
 }
 
 /* BUTTON GOLD GRADIENT BORDER */
