@@ -9,6 +9,7 @@ export async function POST(req) {
     subscriber.first_name.slice(1);
 
   try {
+    // Resend instance
     const htmlEmail = new Resend(process.env.RESEND_API_KEY);
 
     const data = await htmlEmail.emails.send({
