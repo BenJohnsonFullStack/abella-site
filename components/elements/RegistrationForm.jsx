@@ -33,6 +33,12 @@ const RegistrationForm = () => {
 
   const handleEmail = async () => {
     // send email
+    for (let input in formValues) {
+      if (!formValues[input]) {
+        return "All fields required.";
+      }
+    }
+
     try {
       const response = await fetch("/api/send", {
         method: "POST",
