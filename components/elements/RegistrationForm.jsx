@@ -27,6 +27,7 @@ const RegistrationForm = () => {
   const { submitting, error, message, formValues } = state;
 
   const handleChange = (e) => {
+    console.log(e);
     const { name, value } = e.target;
     setState({ ...state, formValues: { ...formValues, [name]: value } });
   };

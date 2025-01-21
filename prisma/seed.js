@@ -4,13 +4,13 @@ const prisma = new PrismaClient();
 
 async function main() {
   //check if subscriber exists by email
-  const user = await prisma.Subscriber.upsert({
+  const user = await prisma.subscriber.upsert({
     where: {
       email: "test@test.com",
     },
-    //if exists, do nothing
+    // if exists, do nothing
     update: {},
-    //else, create this new subscriber
+    // else, create this new subscriber
     create: {
       first_name: "Ben",
       last_name: "Johnson",
